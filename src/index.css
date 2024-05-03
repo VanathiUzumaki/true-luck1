@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'TrueLuck';
+    src: url('./Styles/Fonts/VVDS-Fifties-SExp-Reg.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'ProtoMono';
+    src: url('./Styles/Fonts/ProtoMono-Medium.woff2') format('woff2');
+  }
