@@ -1,34 +1,50 @@
-.room{
-    width: 437px;
-    height: 345px;
+/* .room{
+    width: 400px;
+    height: 315px;
     flex-shrink: 0;
     background: linear-gradient(black, black) padding-box,
                 linear-gradient(135deg, #FEBB3B 0%, #e02cff 39%, #fb7fea 57%, #8C239E 100%) border-box;
     border-radius: 30px;
     border: 4px solid transparent;
+} */
+
+.room{
+    width: 400px;
+    height: 315px;
+    background-image: url("../Images/Room-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .room-contents{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 17px;
 }
 
 p{
     margin: 0;
-    font-family: "Proto Mono";
+    font-family: "ProtoMono";
     color: WHITE;
 }
 .room-price{
     color: #F4A000;
-    font-family: "Proto Mono";
     font-size: 30px;
+    margin-top: 3px;
+    margin-bottom: -5px;
 }
 
 .entree-fee , .participants ,.tickets-remaining ,.total-prizes{
     color: #FFF;
-    font-family: "Proto Mono";
     text-shadow: 0px 4px 25px #FFF;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2px;
 }
 
 .first-prize{

@@ -9,9 +9,11 @@ function Room() {
         <div className='room-contents'>
             <p className='room-price'>$100 ROOM</p>
             <p className='entree-fee'>ENTREE FEE: $10 USDT</p>
-            <p className='participants'>Participants:6</p>
-            <p className='tickets-remaining'>tickets remaining: 2/10</p>
-            <p className='total-prizes'>total prizes: 3</p>
+            <div className='text-container'>
+                <p className='participants'>Participants:6</p>
+                <p className='tickets-remaining'>tickets remaining: 2/10</p>
+                <p className='total-prizes'>total prizes: 3</p>
+            </div>
             <p className='first-prize'>1st prize: $50 USDT</p>
             <div className='buying-section'>
                 <div className='counter'>
