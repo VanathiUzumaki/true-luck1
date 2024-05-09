@@ -8,6 +8,8 @@ function Rooms_Available() {
         <p className='rooms-available-text'>Rooms Available:</p>
         <div className='rooms'>
             <Room/>
+            <Room/>
+            <Room/>
         </div>
     </div>
   );

@@ -14,6 +14,7 @@
     background-image: url("../Images/Room-bg.png");
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 25px;
 }
 
 .room-contents{
@@ -35,7 +36,7 @@ p{
     margin-bottom: -5px;
 }
 
-.entree-fee , .participants ,.tickets-remaining ,.total-prizes{
+.entree-fee{
     color: #FFF;
     text-shadow: 0px 4px 25px #FFF;
 }
