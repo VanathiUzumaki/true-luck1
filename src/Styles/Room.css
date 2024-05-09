@@ -1,0 +1,90 @@
+.room{
+    width: 437px;
+    height: 345px;
+    flex-shrink: 0;
+    background: linear-gradient(black, black) padding-box,
+                linear-gradient(135deg, #FEBB3B 0%, #e02cff 39%, #fb7fea 57%, #8C239E 100%) border-box;
+    border-radius: 30px;
+    border: 4px solid transparent;
+}
+
+.room-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+    font-family: "Proto Mono";
+    color: WHITE;
+}
+.room-price{
+    color: #F4A000;
+    font-family: "Proto Mono";
+    font-size: 30px;
+}
+
+.entree-fee , .participants ,.tickets-remaining ,.total-prizes{
+    color: #FFF;
+    font-family: "Proto Mono";
+    text-shadow: 0px 4px 25px #FFF;
+}
+
+.first-prize{
+    color: #FFF;
+    text-shadow: 0px 4.5px 4px #DE0DB0;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #000;
+    font-family: "Proto Mono";
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.buying-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-number{
+    color: white;
+    font-size: 30px;
+}
+
+.buy-container{
+    width: 134.989px;
+    height: 47.49px;
+    border-radius: 14.189px;
+    border: 0.645px solid #FFD095;
+    background: linear-gradient(127deg, #FFF 5.23%, #FFF 195.56%);
+    box-shadow: 0px 2.58px 32.248px 0px #F7A64C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-text{
+    font-size: 30px;
+    font-weight: bolder;
+    background: linear-gradient(83deg, #E79556 9.44%, #C86379 88.92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.view-text{
+    color: #FFF;
+    text-shadow: 0px 4.719px 29.495px #FFF;
+    font-family: "Proto Mono";
+    font-size: 25.956px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+}
