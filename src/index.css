@@ -6,3 +6,7 @@
     font-family: 'ProtoMono';
     src: url('./Styles/Fonts/ProtoMono-Medium.woff2') format('woff2');
   }
+  @font-face {
+    font-family: 'ProtoMono Bold';
+    src: url('./Styles/Fonts/ProtoMonoSemiBold.woff2') format('woff2');
+  }
