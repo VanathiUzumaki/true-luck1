@@ -42,12 +42,10 @@
     align-items: center;
     justify-content: end;
     gap: 3%;
-    /* justify-items: end; */
     
 }
 
 .dropdown{
-    /* width: 170px; */
     display: flex;
     align-items: center;
     gap: 6px
