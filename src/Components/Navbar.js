@@ -10,14 +10,14 @@ function Navbar() {
         <div className='nav-elements'>
             <p className='points'>POINTS:600</p>
             <div className='dropdown'>
-                <img src={eth} alt='eth' className='eth'/>
+                <img src={eth} alt='eth' className='eth' />
                 <p className='dropdown-text'>ETH</p>
                 <img src={drop} alt='drop' className='drop'/>
             </div>
             <div className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </div>
-            <img src={profileicon} alt='profile-icon' className='profile-icon'/>
+            <img src={profileicon} alt='profile-icon' className='profile-icon' />
         </div>
     </div>
   );

@@ -2,12 +2,17 @@
     display: flex;
     justify-content: space-between;
     border-bottom: #535353 solid 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    align-items: center;
+
 
 }
 
 .logo{
     font-family: 'TrueLuck';
-    font-size: 50px;
+    font-size: 30px;
     margin: 0;
     padding-left: 20px;
     text-shadow: 0.903px 1.421px 14.215px #DE0DB0;
@@ -23,35 +28,55 @@
     -webkit-text-fill-color: transparent;
 }
 
+.eth{
+    width : 30px;
+}
+
+.drop{
+    width : 30px;
+}
+
 .nav-elements{
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
+    gap: 3%;
+    /* justify-items: end; */
     
 }
 
 .dropdown{
-    width: 170px;
+    /* width: 170px; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 6px
+   
 
 }
 .points,.dropdown-text,.connect-wallet-text{
     color: white;
     font-family: 'ProtoMono';
-    font-size: 25px;
+    font-size: 17px;
     margin: 0;
 } 
 
-.connect-wallet{
-    width: 265.125px;
-    height: 47.095px;
-    border-radius: 22px;
-    border: 2px solid #FFD095;
+.connect-wallet {
+    width: 170.125px;
+    height: 28.095px;
+    border-radius: 12px;
+    border: 1px solid #FFD095;
     background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.profile-icon{
+  
+    width: 35px;
+    margin-right: 8px;
+}
+
+
+
