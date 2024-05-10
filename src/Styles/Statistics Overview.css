@@ -1,37 +1,49 @@
-.statistics-amount,.statistics-transactions,.statistics-addresses{
-    width: 349px;
-height: 65px;
-flex-shrink: 0;
-border-width: 2px; /* Specify the border width */
-border-style: solid; /* Specify the border style */
-border-image-source: linear-gradient(to right, #FEBB3B, #8A00BE); /* Gradient from left to right */
-border-image-slice: 1; /* Specify how the gradient should be applied */
+.statistics-overview-text{
+    color: #E34283;
+    text-shadow: 2px 5px 18.4px #C80E9F;
+    font-family: "Proto Mono";
+    font-size: 25px;
+    font-style: normal; 
+    margin-left: 30px;
+    margin-top: 25px;
 }
 
 .statistics-content{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 25px;
     
 }
-.stat-uppertext{
-    font-family: "Proto Mono";
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: lowercase;
-background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+.statistics-amount,.statistics-transactions,.statistics-addresses{
+    width: 349px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px; /* Specify the border width */
+    border-style: solid; /* Specify the border style */
+    border-image-source: linear-gradient(to right, #FEBB3B, #8A00BE); /* Gradient from left to right */
+    border-image-slice: 1; /* Specify how the gradient should be applied */
 }
 
-.stat-Lowertext{
+.statistics-overview .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.statistics-overview .stat-uppertext{
+    font-family: "Proto Mono";
+    font-size: 15px;
+    font-weight: bolder;
+    background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statistics-overview .stat-Lowertext{
     color: #FFF;
-font-family: "Proto Mono";
-font-size: 27px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: lowercase;
+    font-family: "Proto Mono";
+    font-size: 27px;
 }

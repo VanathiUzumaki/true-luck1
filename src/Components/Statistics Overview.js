@@ -5,6 +5,7 @@ import '../Styles/Statistics Overview.css';
 function Statistics_Overview() {
     return (
         <div className='statistics-overview'>
+            <p className='statistics-overview-text'>STATISTICS OVERVIEW:</p>
             <div className='statistics-content'>
                 <div className='statistics-amount'>
                     <div class="text-container">
