@@ -1,0 +1,37 @@
+.statistics-amount,.statistics-transactions,.statistics-addresses{
+    width: 349px;
+height: 65px;
+flex-shrink: 0;
+border-width: 2px; /* Specify the border width */
+border-style: solid; /* Specify the border style */
+border-image-source: linear-gradient(to right, #FEBB3B, #8A00BE); /* Gradient from left to right */
+border-image-slice: 1; /* Specify how the gradient should be applied */
+}
+
+.statistics-content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.stat-uppertext{
+    font-family: "Proto Mono";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: lowercase;
+background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.stat-Lowertext{
+    color: #FFF;
+font-family: "Proto Mono";
+font-size: 27px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: lowercase;
+}

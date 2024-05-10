@@ -11,6 +11,7 @@ function Rooms_Available() {
             <Room/>
             <Room/>
         </div>
+        <p className='rooms-available-text'>STATISTICS OVERVIEW:</p>
     </div>
   );
 }
