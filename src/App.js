@@ -8,9 +8,9 @@ function App() {
  
   return (
     <div className="App">
-      <Navbar{...jsonData.Navbar}/>
+      <Navbar {...jsonData.Navbar}/>
       <Rooms_Available {...jsonData.Rooms}/>
-      <Statistics_Overview{...jsonData.Statistics_Overview}/>
+      <Statistics_Overview {...jsonData.Statistics_Overview}/>
     </div>
   );
 }

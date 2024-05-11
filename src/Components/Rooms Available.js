@@ -27,15 +27,15 @@ function Rooms_Available(props) {
   return (
     <div className='rooms-available'>
       <div className='rooms-available-text'>Rooms Available:</div>
-      <Carousel responsive={responsive}>
-        <div><div className='rooms'> <Room {...props}/> </div></div>
-        <div> <div className='rooms'> <Room {...props} /> </div></div>
-        <div> <div className='rooms'> <Room {...props} /> </div></div>
-        <div> <div className='rooms'> <Room {...props} /> </div></div>
-        <div><div className='rooms'> <Room {...props}/> </div></div>
-        <div> <div className='rooms'> <Room {...props}/> </div></div>
-        <div> <div className='rooms'> <Room {...props}/> </div></div>
-        <div> <div className='rooms'> <Room {...props}/> </div></div>
+      <Carousel responsive={responsive} className='carousel'>
+        <div className='rooms'> <Room {...props}/> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} /> </div>
       </Carousel>
     </div>
 

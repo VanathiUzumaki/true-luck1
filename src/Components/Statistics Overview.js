@@ -48,14 +48,9 @@ function Statistics_Overview(props) {
                         <p>VIEW</p>
                     </div>
                 </div>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
-                <User/>
+                {props.Users.map((user, index) => (
+                    <User key={index} {...user} />
+                ))}
 
             </div>
         </div>
