@@ -1,0 +1,21 @@
+{
+    "Navbar":{
+     "points": 900
+    },
+    "Rooms":{
+        "roomName" : "$100 Room",
+        "entryFee": "$10 USDT",
+        "participants": 6,
+        "ticketsRemaining":2,
+        "totalPrizes":3,
+        "onePrize": "$50 USDT"
+
+    },
+    "Statistics_Overview":{
+        "amount" : "$12,234.34",
+        "transactions" : "234,324",
+        "address":"12,536"
+
+    }
+
+}

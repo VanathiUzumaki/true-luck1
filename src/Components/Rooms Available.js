@@ -4,7 +4,7 @@ import '../Styles/Rooms Available.css';
 import Room from './Room.js'
 
 
-function Rooms_Available() {
+function Rooms_Available(props) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you
@@ -26,16 +26,16 @@ function Rooms_Available() {
   };
   return (
     <div className='rooms-available'>
-      <p className='rooms-available-text'>Rooms Available:</p>
+      <div className='rooms-available-text'>Rooms Available:</div>
       <Carousel responsive={responsive}>
-        <div><div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
-        <div><div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
-        <div> <div className='rooms'> <Room /> </div></div>
+        <div><div className='rooms'> <Room {...props}/> </div></div>
+        <div> <div className='rooms'> <Room {...props} /> </div></div>
+        <div> <div className='rooms'> <Room {...props} /> </div></div>
+        <div> <div className='rooms'> <Room {...props} /> </div></div>
+        <div><div className='rooms'> <Room {...props}/> </div></div>
+        <div> <div className='rooms'> <Room {...props}/> </div></div>
+        <div> <div className='rooms'> <Room {...props}/> </div></div>
+        <div> <div className='rooms'> <Room {...props}/> </div></div>
       </Carousel>
     </div>
 

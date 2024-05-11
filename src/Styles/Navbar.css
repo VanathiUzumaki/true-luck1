@@ -26,14 +26,17 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: default;
 }
 
 .eth{
     width : 30px;
+    
 }
 
 .drop{
     width : 30px;
+    cursor: pointer;
 }
 
 .nav-elements{
@@ -48,15 +51,20 @@
 .dropdown{
     display: flex;
     align-items: center;
-    gap: 6px
+    gap: 6px;
+    cursor: default;
    
 
+}
+.points{
+    cursor: default;
 }
 .points,.dropdown-text,.connect-wallet-text{
     color: white;
     font-family: 'ProtoMono';
     font-size: 17px;
     margin: 0;
+    
 } 
 
 .connect-wallet {
@@ -68,12 +76,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
 }
 
 .profile-icon{
   
     width: 35px;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 

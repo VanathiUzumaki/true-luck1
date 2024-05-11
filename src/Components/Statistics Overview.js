@@ -3,27 +3,27 @@ import User from './User'
 
 
 
-function Statistics_Overview() {
+function Statistics_Overview(props) {
     return (
         <div className='statistics-overview'>
             <p className='statistics-overview-text'>STATISTICS OVERVIEW:</p>
             <div className='statistics-content'>
                 <div className='statistics-amount'>
                     <div class="text-container">
-                        <p class= 'stat-uppertext'>AMOUNT:</p>
-                        <p class= 'stat-Lowertext'>$12,234.34</p>
+                        <div class= 'stat-uppertext'>AMOUNT:</div>
+                        <div class= 'stat-Lowertext'>{props.amount}</div>
                     </div>
                 </div>
                 <div className='statistics-transactions'>
                     <div class="text-container">
-                        <p class= 'stat-uppertext'>TRANSACTIONS:</p>
-                        <p class= 'stat-Lowertext'>234,324</p>
+                        <div class= 'stat-uppertext'>TRANSACTIONS:</div>
+                        <div class= 'stat-Lowertext'>{props.transactions}</div>
                     </div>
                 </div>
                 <div className='statistics-addresses'>
                     <div class="text-container">
-                        <p class= 'stat-uppertext'>ADDRESSES:</p>
-                        <p class= 'stat-Lowertext'>12,536</p>
+                        <div class= 'stat-uppertext'>ADDRESSES:</div>
+                        <div class= 'stat-Lowertext'>{props.address}</div>
                     </div>
                 </div>
             </div>

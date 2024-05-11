@@ -6,6 +6,7 @@
     font-style: normal; 
     margin-left: 30px;
     margin-top: 25px;
+    cursor: default;
 }
 
 .statistics-content{
@@ -40,12 +41,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: default;
 }
 
 .statistics-overview .stat-Lowertext{
     color: #FFF;
     font-family: "Proto Mono";
     font-size: 27px;
+    cursor: default;
 }
 .statistics-overview .recent-transactions{
     margin: 20px 15px 0px 15px;
