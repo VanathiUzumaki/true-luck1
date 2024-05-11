@@ -11,17 +11,16 @@ function Room(props) {
 
     const UpButton = () => {
         setTickets(tickets+1);
-        const audio = new Audio(CashRegisterAudio);
-        audio.play();
       };
       const DownButton = () => {
-        setTickets(tickets-1);
-        // const audio = new Audio(CashRegisterAudio);
-        // audio.play();
+        if (tickets > 0){
+          setTickets(tickets-1);
+        }
       };
 
     const OnBuyButtonclick = () => {
-        console.log('Buy button clicked!');
+        const audio = new Audio(CashRegisterAudio);
+        audio.play();
       };
   return (
     <div className='room'>
