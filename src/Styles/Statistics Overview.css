@@ -47,17 +47,46 @@
     font-family: "Proto Mono";
     font-size: 27px;
 }
-
+.statistics-overview .recent-transactions{
+    margin: 20px 15px 0px 15px;
+}
 .statistics-overview .transaction-headings{
     display: flex;
-    margin: 20px 15px 0px 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: white solid 2px;
     padding-bottom: 5px;
 }
 
 .transaction-headings .users{
-    margin-left: 30px;
+    width:200px;
+    text-align: center;
+}
+.transaction-headings .transaction-hash{
+    width:400px;
+    text-align: center;
 }
 
-/* test */
+.transaction-headings .value{
+    width:300px;
+    text-align: center;
+}
+
+.transaction-headings .value{
+    width:200px;
+    text-align: center;
+}
+
+.transaction-headings .from {
+    width:200px;
+    text-align: center;
+}
+
+.transaction-headings .age {
+    width:200px;
+    text-align: center;
+}
+
+.transaction-headings .view {
+    width:100px;
+    text-align: center;
+}

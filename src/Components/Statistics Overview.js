@@ -1,4 +1,5 @@
 import '../Styles/Statistics Overview.css';
+import User from './User'
 
 
 
@@ -28,13 +29,34 @@ function Statistics_Overview() {
             </div>
             <div className='recent-transactions'>
                 <div className='transaction-headings'>
-                    <p className='users'>USERS</p>
-                    <p className='transaction-hash'>TRANSACTION HASH</p>
-                    <p className='value'>VALUE</p>
-                    <p className='from'>FROM</p>
-                    <p className='age'>AGE</p>
-                    <p className='view'>VIEW</p>
+                    <div className='users'>
+                        <p>USERS</p>
+                    </div>
+                    <div className='transaction-hash'>
+                        <p>TRANSACIION HASH</p>
+                    </div>
+                    <div className='value'>
+                        <p>VALUE</p>
+                    </div>
+                    <div className='from'>
+                        <p>FROM</p>
+                    </div>
+                    <div className='age'>
+                        <p>AGE</p>
+                    </div>
+                    <div className='view'>
+                        <p>VIEW</p>
+                    </div>
                 </div>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+                <User/>
+
             </div>
         </div>
     );
