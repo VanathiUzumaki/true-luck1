@@ -4,6 +4,10 @@ import down_arrow from '../Images/Down arrow.png'
 
 
 function Room() {
+
+    const OnBuyButtonclick = () => {
+        console.log('Buy button clicked!');
+      };
   return (
     <div className='room'>
         <div className='room-contents'>
@@ -21,10 +25,10 @@ function Room() {
                     <p className='counter-number'>3</p>
                     <img src={down_arrow}/>       
                 </div>
-                <div className='buy-container'>
+                <button className='buy-container' onClick={OnBuyButtonclick}>
                     <p className='buy-text'>BUY</p>
-                </div>
-                <p className='view-text'>VIEW</p>
+                </button>
+                <a href="https://www.example.com" className='view-text'>VIEW</a>
             </div>
         </div>
     </div>
