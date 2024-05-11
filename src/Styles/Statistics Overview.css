@@ -21,10 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-width: 2px; /* Specify the border width */
-    border-style: solid; /* Specify the border style */
-    border-image-source: linear-gradient(to right, #FEBB3B, #8A00BE); /* Gradient from left to right */
-    border-image-slice: 1; /* Specify how the gradient should be applied */
+    border-width: 2px; 
+    border-style: solid; 
+    border-image-source: linear-gradient(to right, #FEBB3B, #8A00BE); 
+    border-image-slice: 1; 
 }
 
 .statistics-overview .text-container{
