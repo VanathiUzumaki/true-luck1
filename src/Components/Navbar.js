@@ -4,6 +4,11 @@ import drop from '../Images/icon-dropdown.png';
 import profileicon from '../Images/profile-icon.png'
 
 function Navbar() {
+
+  const handleConnectWallet = () => {
+    console.log('Connect Wallet button clicked!');
+  };
+ 
   return (
     <div className='Nav'>
         <p className='logo'>true luck</p>
@@ -14,9 +19,9 @@ function Navbar() {
                 <p className='dropdown-text'>ETH</p>
                 <img src={drop} alt='drop' className='drop'/>
             </div>
-            <div className='connect-wallet'>
+            <button className='connect-wallet'  onClick={handleConnectWallet}>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
-            </div>
+            </button>
             <img src={profileicon} alt='profile-icon' className='profile-icon' />
         </div>
     </div>
