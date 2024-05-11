@@ -17,10 +17,10 @@ function User(props) {
             <p>{props.value} ETH</p>
         </div>
         <div className='from'>
-            <p>0xcsewsdga2234</p>
+            <p>{props.from}</p>
         </div>
         <div className='age'>
-            <p>29 seconds ago</p>
+            <p>{props.age}</p>
         </div>
         <div className='view'>
             <img className='eye' src={eye}/>
