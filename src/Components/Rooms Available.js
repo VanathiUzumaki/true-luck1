@@ -2,6 +2,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../Styles/Rooms Available.css';
 import Room from './Room.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function Rooms_Available(props) {
@@ -27,7 +30,9 @@ function Rooms_Available(props) {
   return (
     <div className='rooms-available'>
       <div className='rooms-available-text'>Rooms Available:</div>
-      <Carousel responsive={responsive} className='carousel'>
+      <Carousel
+      infinite={true}
+      responsive={responsive} className='carousel'>
         <div className='rooms'> <Room {...props}/> </div>
         <div className='rooms'> <Room {...props} /> </div>
         <div className='rooms'> <Room {...props} /> </div>

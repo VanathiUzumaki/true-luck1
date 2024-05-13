@@ -12,10 +12,55 @@
 
 .rooms{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 25px;
 }
 
 .carousel{
     margin-top: 25;
+}
+
+.react-multi-carousel-list{
+    position: unset !important;
+  }
+
+  .react-multiple-carousel__arrow{
+    cursor: default !important;
+  }
+
+  /* .react-multiple-carousel__arrow--right::before{
+    background-image: url("../Images/carousel_arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .react-multiple-carousel__arrow--left::before{
+    background-image: url("../Images/carousel_arrow_o.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  } */
+
+  .react-multiple-carousel__arrow::before {
+    font-size: 40px;
+    color: transparent; 
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.react-multiple-carousel__arrow{
+  background : transparent;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + -61px);
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + -65px);
 }
