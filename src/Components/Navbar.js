@@ -2,13 +2,17 @@ import '../Styles/Navbar.css';
 import eth from '../Images/icon-eth.png';
 import drop from '../Images/icon-dropdown.png';
 import profileicon from '../Images/profile-icon.png'
+import {Navigate, useNavigate} from "react-router-dom"
 
 function Navbar(props) {
-
+const navigate = useNavigate()
   const handleConnectWallet = () => {
     console.log('Connect Wallet button clicked!');
   };
- 
+  const goToProfileDashboard = () => {
+    navigate("./Pages/ProfileDashboard"); 
+  };
+
   return (
     <div className='Nav'>
         <div className='logo'>true luck</div>
@@ -22,7 +26,7 @@ function Navbar(props) {
             <button className='connect-wallet'  onClick={handleConnectWallet}>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>
-            <img src={profileicon} alt='profile-icon' className='profile-icon' />
+            <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={goToProfileDashboard}/>
         </div>
     </div>
   );
