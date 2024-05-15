@@ -1,13 +1,17 @@
-// import './App.css';
-// import jsonData from './Data.json';
-// import Navbar from './Components/Navbar.js';
+ import '../App.css';
+import '../Styles/Room.css';
+import jsonData from '../Data.json';
+import Navbar from '../Components/Navbar.js';
+
 
 
 
 function ProfileDashboard() {
  
     return (
-      <h1>TESTTTTTINGGGG</h1>
+      <div className="App">
+      <Navbar {...jsonData.Navbar}/>
+    </div>
     );
   }
   
