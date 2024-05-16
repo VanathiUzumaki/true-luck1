@@ -1,0 +1,40 @@
+.profile-details{
+    margin: 20px 0px 0px 60px;
+}
+
+.profile-details .profile-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.profile-details .gradient-border{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(110deg, #FEBB3B, #8A00BE);
+}
+
+.profile-details .dp{
+    display:block;
+    width:150px;
+    height: 150px;
+}
+
+.profile-details .profile-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.profile-details .x-logo{
+    width: 35px;
+    height: 35px;
+}
+
+.profile-details .discord-logo{
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+}
