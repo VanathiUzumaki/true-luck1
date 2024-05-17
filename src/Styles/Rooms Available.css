@@ -25,7 +25,7 @@
   }
 
   .react-multiple-carousel__arrow{
-    cursor: default !important;
+    cursor: pointer !important;
   }
 
   /* .react-multiple-carousel__arrow--right::before{
