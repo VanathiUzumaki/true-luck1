@@ -1,4 +1,4 @@
-.rooms-available-text{
+.rooms-available .rooms-available-text{
     color: #E34283;
     text-shadow: 2px 5px 18.4px #C80E9F;
     font-family: "Proto Mono";
@@ -10,7 +10,7 @@
     pointer-events: none;
 }
 
-.rooms{
+.rooms-available  .rooms{
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
