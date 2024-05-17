@@ -1,5 +1,5 @@
 
-.navbar {
+.Profile-Options {
     display: flex;
     align-items: center;
     margin:15px 40px 0px 20px;
@@ -8,7 +8,7 @@
     border-bottom: 2px solid #434343;
 }
 
-.nav-item {
+.Profile-Options .nav-item {
     color: white;
     padding: 0 10px;
     font-size: 14px;
@@ -17,19 +17,19 @@
     position: relative; 
 }
 
-.nav-item:hover {
+.Profile-Options .nav-item:hover {
     -webkit-text-stroke-width: 0.42px;
     -webkit-text-stroke-color: #FEBB3B;
     text-shadow: 0px 2px 20px #F7A64C,0px -2px 20px #F7A64C;
 }
 
-.nav-item.active{
+.Profile-Options .nav-item.active{
     -webkit-text-stroke-width: 0.42px;
     -webkit-text-stroke-color: #FEBB3B;
     text-shadow: 0px 2px 20px #F7A64C,0px -2px 20px #F7A64C;
 }
 
-.nav-item:not(:last-child)::after {
+.Profile-Options .nav-item:not(:last-child)::after {
     content: '';
     position: absolute;
     right: 0px;

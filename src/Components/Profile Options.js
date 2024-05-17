@@ -10,7 +10,7 @@ const Profile_Options = () => {
     };
 
     return (
-        <div className="navbar">
+        <div className="Profile-Options">
             <div className={`nav-item ${activeItem === 'ROOMS ENTERED' ? 'active' : ''}`}
                 onClick={() => handleItemClick('ROOMS ENTERED')}>
                 ROOMS ENTERED
