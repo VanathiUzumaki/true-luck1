@@ -10,7 +10,7 @@
     pointer-events: none;
 }
 
-.rooms-available  .rooms{
+.rooms-available .rooms{
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
