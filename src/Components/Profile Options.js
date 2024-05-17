@@ -1,0 +1,34 @@
+import React, { useState } from 'react';
+import '../Styles/Profile Options.css';
+
+const Profile_Options = () => {
+    const [activeItem, setActiveItem] = useState('ROOMS ENTERED');
+
+    const handleItemClick = (item) => {
+        console.log(item)
+        setActiveItem(item);
+    };
+
+    return (
+        <div className="navbar">
+            <div className={`nav-item ${activeItem === 'ROOMS ENTERED' ? 'active' : ''}`}
+                onClick={() => handleItemClick('ROOMS ENTERED')}>
+                ROOMS ENTERED
+            </div>
+            <div className={`nav-item ${activeItem === 'TX HISTORY' ? 'active' : ''}`}
+                onClick={() => handleItemClick('TX HISTORY')}>
+                TX HISTORY
+            </div>
+            <div className={`nav-item ${activeItem === 'ANALYTICS' ? 'active' : ''}`}
+                onClick={() => handleItemClick('ANALYTICS')}>
+                ANALYTICS
+            </div>
+            <div className={`nav-item ${activeItem === 'REFERRALS' ? 'active' : ''}`}
+                onClick={() => handleItemClick('REFERRALS')}>
+                REFERRALS
+            </div>
+        </div>
+    );
+}
+
+export default Profile_Options;
