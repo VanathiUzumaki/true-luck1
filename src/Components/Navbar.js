@@ -13,7 +13,7 @@ function Navbar(props) {
  
   return (
     <div className='Nav'>
-        <div className='logo'>true luck</div>
+        <div className='logo' onClick={() => { navigate("/");}}>true luck</div>
         <div className='nav-elements'>
             <div className='points'>POINTS:{props.points}</div>
             <div className='dropdown'>
@@ -24,7 +24,7 @@ function Navbar(props) {
             <button className='connect-wallet'  onClick={handleConnectWallet}>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>
-            <img src={profileicon} alt='profile-icon' className='profile-icon'   onClick={() => { navigate("/ProfileDashboard");}} />
+            <img src={profileicon} alt='profile-icon' className='profile-icon'  onClick={() => { navigate("/ProfileDashboard");}} />
         </div>
     </div>
   );
