@@ -5,7 +5,6 @@ const Profile_Options = () => {
     const [activeItem, setActiveItem] = useState('ROOMS ENTERED');
 
     const handleItemClick = (item) => {
-        console.log(item)
         setActiveItem(item);
     };
 
