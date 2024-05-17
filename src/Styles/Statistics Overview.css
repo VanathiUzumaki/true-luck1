@@ -1,4 +1,10 @@
-.statistics-overview-text{
+.statistics-overview p{
+    margin: 0;
+    font-family: "ProtoMono";
+    color: WHITE;
+}
+
+.statistics-overview .statistics-overview-text{
     color: #E34283;
     text-shadow: 2px 5px 18.4px #C80E9F;
     font-family: "Proto Mono";
@@ -9,14 +15,14 @@
     cursor: default;
 }
 
-.statistics-content{
+.statistics-overview .statistics-content{
     display: flex;
     justify-content: space-evenly;
     margin-top: 25px;
     
 }
 
-.statistics-amount,.statistics-transactions,.statistics-addresses{
+.statistics-overview .statistics-amount,.statistics-transactions,.statistics-addresses{
     width: 349px;
     height: 65px;
     display: flex;
@@ -60,11 +66,11 @@
     padding-bottom: 5px;
 }
 
-.transaction-headings .users{
+.statistics-overview .transaction-headings .users{
     width:200px;
     text-align: center;
 }
-.transaction-headings .transaction-hash{
+.statistics-overview .transaction-headings .transaction-hash{
     width:400px;
     text-align: center;
 }

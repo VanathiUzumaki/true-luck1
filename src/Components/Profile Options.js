@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Profile Options.css';
 
-const Profile_Options = () => {
-    const [activeItem, setActiveItem] = useState('ROOMS ENTERED');
-
-    const handleItemClick = (item) => {
-        setActiveItem(item);
-    };
-
+const Profile_Options = ({ activeItem, handleItemClick }) => {
     return (
         <div className="Profile-Options">
             <div className={`nav-item ${activeItem === 'ROOMS ENTERED' ? 'active' : ''}`}

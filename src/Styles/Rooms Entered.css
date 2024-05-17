@@ -1,0 +1,17 @@
+.Rooms-Entered{
+    margin:15px 0px 0px 20px;
+
+}
+
+.Rooms-Entered .Room-Stats{
+    display: flex;
+    color: white;
+    font-family: 'Proto Mono';
+}
+
+.Rooms-Entered .Room-Stats div{
+    border: 2px solid #434343;
+    padding:2px 10px;
+    margin-left: 10px;
+
+}

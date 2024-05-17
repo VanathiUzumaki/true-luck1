@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
 }
 
-.room-contents{
+.room .room-contents{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,31 +24,31 @@
     cursor: default;
 }
 
-p{
+.room p{
     margin: 0;
     font-family: "ProtoMono";
     color: WHITE;
 }
-.room-price{
+.room .room-price{
     color: #F4A000;
     font-size: 30px;
     margin-top: 3px;
     margin-bottom: -5px;
 }
 
-.entree-fee{
+.room .entree-fee{
     color: #FFF;
     text-shadow: 0px 4px 25px #FFF;
 }
 
-.text-container{
+.room .text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:2px;
 }
 
-.first-prize{
+.room .first-prize{
     color: #FFF;
     text-shadow: 0px 4.5px 4px #DE0DB0;
     -webkit-text-stroke-width: 1.5px;
@@ -58,13 +58,13 @@ p{
     font-weight: bolder;
 }
 
-.buying-section{
+.room .buying-section{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.counter{
+.room .counter{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,7 @@ p{
     font-size: 30px;
 }
 
-.buy-container{
+.room .buy-container{
     width: 134.989px;
     height: 47.49px;
     border-radius: 14.189px;
@@ -87,7 +87,7 @@ p{
     cursor: pointer;
 }
 
-.buy-text{
+.room .buy-text{
     font-size: 30px;
     font-weight: bolder;
     background: linear-gradient(83deg, #E79556 9.44%, #C86379 88.92%);
@@ -96,7 +96,7 @@ p{
     -webkit-text-fill-color: transparent;
 }
 
-.view-text{
+.room .view-text{
     color: #FFF;
     text-shadow: 0px 4.719px 29.495px #FFF;
     font-family: "Proto Mono";

@@ -5,20 +5,22 @@
 .profile-details .profile-container{
     display: flex;
     flex-direction: row;
+    color: white;
+    font-family: 'Proto Mono';
 
 }
 
 
 .profile-details .gradient-border{
     display: inline-block;
-    padding: 8px;
+    padding: 5px;
     background: linear-gradient(110deg, #FEBB3B, #8A00BE);
 }
 
 .profile-details .dp{
     display:block;
-    width:150px;
-    height: 150px;
+    width:170px;
+    height:170px;
 }
 
 .profile-details .profile-details-container{
