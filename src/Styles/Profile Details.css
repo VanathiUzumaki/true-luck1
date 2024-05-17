@@ -2,6 +2,10 @@
     margin: 20px 0px 0px 60px;
 }
 
+.profile-details p{
+    cursor: default;
+}
+
 .profile-details .profile-container{
     display: flex;
     flex-direction: row;
