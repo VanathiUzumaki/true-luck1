@@ -1,7 +1,5 @@
 .Referral-User {
     display: flex;
-    flex-shrink: 0;
-    padding: 5px 0px;
     border-bottom: dashed white 2px;
     margin: 0px 45px;
 }
