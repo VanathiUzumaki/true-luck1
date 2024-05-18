@@ -59,6 +59,7 @@
 .statistics-overview .recent-transactions{
     margin: 20px 15px 0px 15px;
 }
+
 .statistics-overview .transaction-headings{
     display: flex;
     justify-content: space-around;
@@ -66,36 +67,36 @@
     padding-bottom: 5px;
 }
 
-.statistics-overview .transaction-headings .users{
+.statistics-overview .users{
     width:200px;
     text-align: center;
 }
-.statistics-overview .transaction-headings .transaction-hash{
+.statistics-overview .transaction-hash{
     width:400px;
     text-align: center;
 }
 
-.transaction-headings .value{
+.statistics-overview .value{
     width:300px;
     text-align: center;
 }
 
-.transaction-headings .value{
+.statistics-overview .value{
     width:200px;
     text-align: center;
 }
 
-.transaction-headings .from {
+.statistics-overview .from {
     width:200px;
     text-align: center;
 }
 
-.transaction-headings .age {
+.statistics-overview .age {
     width:200px;
     text-align: center;
 }
 
-.transaction-headings .view {
+.statistics-overview .view {
     width:100px;
     text-align: center;
 }
