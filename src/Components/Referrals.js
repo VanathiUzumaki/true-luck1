@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Referrals.css'
 import link_img from '../Images/link.png'
+import Referral_User from './Referral User';
 
 function Referrals(){
 
@@ -28,6 +29,16 @@ function Referrals(){
                     <div className='total-referrals'>Total referrals : 23</div>
                     <div className='total-earned'>Total earned : <span className='green-text'>$152</span></div>
                 </div>
+            </div>
+            <div className='options-container'>
+                <div className='option'>Participants</div>
+                <div className='option'>Activity</div>
+            </div>
+            <div className='referrals-users'>
+                <Referral_User/>
+                <Referral_User/>
+                <Referral_User/>
+                <Referral_User/>
             </div>
         </div>
     );

@@ -1,0 +1,33 @@
+.Referral-User {
+    display: flex;
+    flex-shrink: 0;
+    padding: 5px 0px;
+    border-bottom: dashed white 2px;
+    margin: 0px 45px;
+}
+
+.Referral-User .profile-pic{
+    width:30px;
+}
+
+.Referral-User p{
+    color: #bcbcbc;
+}
+.Referral-User .users{
+    display: flex;
+    align-items: center;
+}
+
+.Referral-User .users p{
+    margin-left: 5px;
+}
+
+.Referral-User .time{
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.Referral-User .time p{
+    margin-left: 5px;
+}
