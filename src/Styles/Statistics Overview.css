@@ -63,7 +63,7 @@
 .statistics-overview .transaction-headings{
     display: flex;
     justify-content: space-around;
-    border-bottom: white solid 2px;
+    border-bottom: white solid 1px;
     padding-bottom: 5px;
 }
 
