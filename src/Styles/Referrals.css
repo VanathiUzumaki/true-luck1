@@ -46,3 +46,29 @@
     height: 25px;
 }
 
+.Referrals .overview-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Referrals .overview{
+    color: #FFD3AE;
+    text-shadow: 0px -2px 20.4px #FFD3AE,0px 2px 20.4px #FFD3AE;
+    font-size: 33.46px;
+    padding: 12px;
+}
+
+.Referrals .bottom-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Referrals .total-referrals,.total-earned{
+    font-size: 30.46px;
+}
+
+.Referrals .green-text{
+    color: #24FF00;
+}

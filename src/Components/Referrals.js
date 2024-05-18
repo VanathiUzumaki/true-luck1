@@ -20,6 +20,15 @@ function Referrals(){
                     <img className='link-img' src={link_img}/>
                 </button>
             </div>
+            <div className='overview-container'>
+                <div className='top-container'>
+                    <div className="overview">Overview:</div>
+                </div>
+                <div className='bottom-container'>
+                    <div className='total-referrals'>Total referrals : 23</div>
+                    <div className='total-earned'>Total earned : <span className='green-text'>$152</span></div>
+                </div>
+            </div>
         </div>
     );
 
