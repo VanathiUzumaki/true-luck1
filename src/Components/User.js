@@ -5,10 +5,12 @@ import eye from '../Images/eye.png'
 function User(props) {
   return (
     <div className="user-component">
+        {props.showProfile && (
         <div className='users'>
-            <img className='profile-pic' src={profile_pic}/>
-            <p>{props.username}</p>
+          <img className='profile-pic' src={profile_pic} alt="Profile" />
+          <p>{props.username}</p>
         </div>
+      )}
         <div className='transaction-hash'>
             <p className='transaction-site'>{props.transactionSite}</p>
             <p className='transaction-id'>{props.transactionId}</p>

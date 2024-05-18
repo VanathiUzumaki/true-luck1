@@ -1,0 +1,42 @@
+.Analytics {
+    padding: 20px;
+    color: #FFF;
+    font-family: "Proto Mono", monospace;
+    text-align: center;
+}
+
+.RaffleStats {
+    color: #FFD3AE;
+    text-shadow: 0px 2.396px 20.4px #FFD3AE;
+    font-size: 33.46px;
+    padding: 12px;
+    text-align: left;
+}
+
+.FirstStats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.stat {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+    font-size: 30.46px;
+}
+
+@media (max-width: 768px) {
+    .FirstStats {
+        flex-direction: column;
+    }
+    
+    .stat {
+        font-size: 25px;
+    }
+}
