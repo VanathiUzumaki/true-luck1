@@ -37,3 +37,54 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.TX-History .tx-history-transactions {
+    /* margin: 20px 15px 0px 15px; */
+}
+
+.TX-History .tx-history-transaction-headings {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #434343;
+    color: #FFF;
+    font-family: "Proto Mono";
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.TX-History .tx-history-users {
+    width: 200px;
+    text-align: center;
+}
+
+.TX-History .tx-history-transaction-hash {
+    width: 400px;
+    text-align: center;
+}
+
+.TX-History .value {
+    width: 300px;
+    text-align: center;
+
+}
+
+
+.TX-History .from {
+    width: 200px;
+    text-align: center;
+
+}
+
+
+.TX-History .age {
+    width: 200px;
+    text-align: center;
+}
+
+
+.TX-History .view {
+    width: 100px;
+    text-align: center;
+}

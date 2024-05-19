@@ -49,7 +49,7 @@ function Statistics_Overview(props) {
                     </div>
                 </div>
                 {props.Users.map((user, index) => (
-                    <User key={index} {...user} showProfile={true}/>
+                    <User key={index} {...user} />
                 ))}
 
             </div>
