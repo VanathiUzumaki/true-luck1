@@ -107,7 +107,7 @@
       display: block;
     }
   
-    .mobile-menu {
+    .Nav .mobile-menu {
       display: block;
       position: fixed;
       top: 0;
@@ -119,11 +119,11 @@
       animation: slideDown 0.3s ease-in-out;
     }
   
-    .mobile-menu.closing {
+    .Nav .mobile-menu.closing {
       animation: slideUp 0.3s ease-in-out;
     }
   
-    .mobile-menu-content {
+    .Nav .mobile-menu-content {
       display: flex;
       flex-direction: column;
       align-items: center;
