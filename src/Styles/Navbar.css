@@ -1,4 +1,4 @@
-.Nav{
+.Nav {
     display: flex;
     justify-content: space-between;
     border-bottom: #535353 solid 2px;
@@ -6,9 +6,9 @@
     padding-top: 3px;
     box-sizing: border-box;
     align-items: center;
-}
-
-.Nav .logo{
+  }
+  
+  .Nav .logo {
     font-family: 'TrueLuck';
     font-size: 30px;
     margin: 0;
@@ -25,47 +25,44 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-}
-
-.Nav .eth{
-    width : 30px;
-    
-}
-
-.Nav .drop{
-    width : 30px;
+  }
+  
+  .Nav .eth {
+    width: 30px;
+  }
+  
+  .Nav .drop {
+    width: 30px;
     cursor: pointer;
-}
-
-.Nav .nav-elements{
+  }
+  
+  .Nav .nav-elements {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 3%;
-    
-}
-
-.Nav .dropdown{
+  }
+  
+  .Nav .dropdown {
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: default;
-   
-
-}
-.Nav .points{
+  }
+  
+  .Nav .points {
     cursor: default;
-}
-.Nav .points,.dropdown-text,.connect-wallet-text{
+  }
+  
+  .Nav .points, .dropdown-text, .connect-wallet-text {
     color: white;
     font-family: 'ProtoMono';
     font-size: 17px;
     margin: 0;
-    
-} 
-
-.Nav .connect-wallet {
+  }
+  
+  .Nav .connect-wallet {
     width: 170.125px;
     height: 28.095px;
     border-radius: 12px;
@@ -75,15 +72,79 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
-}
-
-.Nav .profile-icon{
+  }
   
+  .Nav .profile-icon {
     width: 35px;
     margin-right: 8px;
     cursor: pointer;
-}
-
-
-
+  }
+  
+  .Nav .hamburger {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 10000;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .Nav .hamburger img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  @media (max-width: 700px) {
+    .Nav .nav-elements {
+      display: none;
+    }
+  
+    .Nav .hamburger {
+      display: inline-block;
+    }
+  
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 9999;
+      animation: slideDown 0.3s ease-in-out;
+    }
+  
+    .mobile-menu.closing {
+      animation: slideUp 0.3s ease-in-out;
+    }
+  
+    .mobile-menu-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 20px;
+    }
+  
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes slideUp {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-100%);
+      }
+    }
+  }
+  
