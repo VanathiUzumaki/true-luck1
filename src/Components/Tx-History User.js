@@ -1,6 +1,4 @@
  import '../Styles/Tx-History User.css';
-//import '../Styles/Tx History.css';
-import profile_pic from '../Images/profile-pic.png'
 import eye from '../Images/eye.png'
 
 function TXHistoryUser(props) {
