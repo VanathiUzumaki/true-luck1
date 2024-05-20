@@ -5,8 +5,7 @@ import eye from '../Images/eye.png'
 
 function TXHistoryUser(props) {
   return (
-    <div className="user-component">
-      
+    <div className="tx-history-user">
         <div className='transaction-hash'>
             <p className='transaction-site'>{props.transactionSite}</p>
             <p className='transaction-id'>{props.transactionId}</p>

@@ -1,4 +1,4 @@
-.user-component {
+.tx-history-user {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,22 +10,16 @@
   
 }
 
-.user-component .profile-pic {
+.tx-history-user  .profile-pic {
     width: 30px;
 }
 
-.user-component p {
+.tx-history-user  p {
     color: #bcbcbc;
 }
 
-.user-component .users {
-    width: 200px;
-    display: flex;
-    align-items: center;
 
-}
-
-.user-component .users p {
+.tx-history-user  .users p {
     background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -33,41 +27,45 @@
     margin-left: 5px;
 }
 
-.user-component .transaction-hash {
+.tx-history-user .transaction-hash {
     width: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.user-component .transaction-site {
+.tx-history-user .transaction-hash p{
+    margin:0px
+}
+
+.tx-history-user  .transaction-site {
     text-decoration: underline;
 }
 
-.user-component .value {
+.tx-history-user  .value {
     width: 200px;
     text-align: center;
 }
 
-.user-component .value p {
+.tx-history-user  .value p {
     color: #05FF00;
 }
 
-.user-component .from {
+.tx-history-user  .from {
     width: 200px;
     text-align: center;
 }
 
-.user-component .age {
+.tx-history-user  .age {
     width: 200px;
     text-align: center;
 }
 
-.user-component .view {
+.tx-history-user  .view {
     width: 100px;
     text-align: center;
 }
 
-.user-component .eye {
+.tx-history-user  .eye {
     width: 25px;
 }
