@@ -1,15 +1,12 @@
-import '../Styles/User.css';
+ import '../Styles/Tx-History User.css';
+//import '../Styles/Tx History.css';
 import profile_pic from '../Images/profile-pic.png'
 import eye from '../Images/eye.png'
 
-function User(props) {
+function TXHistoryUser(props) {
   return (
     <div className="user-component">
       
-        <div className='users'>
-          <img className='profile-pic' src={profile_pic} alt="Profile" />
-          <p>{props.username}</p>
-        </div>
         <div className='transaction-hash'>
             <p className='transaction-site'>{props.transactionSite}</p>
             <p className='transaction-id'>{props.transactionId}</p>
@@ -30,4 +27,4 @@ function User(props) {
   );
 }
 
-export default User;
+export default TXHistoryUser;

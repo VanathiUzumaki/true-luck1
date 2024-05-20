@@ -1,0 +1,73 @@
+.user-component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    color: #BCBCBC;
+    font-family: "Proto Mono";
+    font-size: 15px;
+    font-style: normal;
+  
+}
+
+.user-component .profile-pic {
+    width: 30px;
+}
+
+.user-component p {
+    color: #bcbcbc;
+}
+
+.user-component .users {
+    width: 200px;
+    display: flex;
+    align-items: center;
+
+}
+
+.user-component .users p {
+    background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 5px;
+}
+
+.user-component .transaction-hash {
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-component .transaction-site {
+    text-decoration: underline;
+}
+
+.user-component .value {
+    width: 200px;
+    text-align: center;
+}
+
+.user-component .value p {
+    color: #05FF00;
+}
+
+.user-component .from {
+    width: 200px;
+    text-align: center;
+}
+
+.user-component .age {
+    width: 200px;
+    text-align: center;
+}
+
+.user-component .view {
+    width: 100px;
+    text-align: center;
+}
+
+.user-component .eye {
+    width: 25px;
+}
