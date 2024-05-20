@@ -95,6 +95,10 @@
     width: 35px;
     height: 35px;
   }
+
+  .mobile-menu{
+    display: none;
+  }
   
   @media (max-width: 700px) {
     .Nav .nav-elements {
@@ -106,6 +110,7 @@
     }
   
     .mobile-menu {
+      display: block;
       position: fixed;
       top: 0;
       left: 0;
