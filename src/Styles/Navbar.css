@@ -83,9 +83,7 @@
   .Nav .hamburger {
     display: none;
     cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 10px;
+    margin-right: 10px;
     z-index: 10000;
     width: 35px;
     height: 35px;
@@ -106,7 +104,7 @@
     }
   
     .Nav .hamburger {
-      display: inline-block;
+      display: block;
     }
   
     .mobile-menu {
