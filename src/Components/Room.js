@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import CashRegisterAudio from '../Styles/Audio/cash-register-purchase.mp3';
 import '../Styles/Room.css';
 import up_arrow from '../Images/Up arrow.png'
@@ -22,6 +23,8 @@ function Room(props) {
         const audio = new Audio(CashRegisterAudio);
         audio.play();
       };
+
+      const navigate = useNavigate();
   return (
     <div className='room'>
         <div className='room-contents'>
@@ -42,7 +45,7 @@ function Room(props) {
                 <button className='buy-container' onClick={OnBuyButtonclick}>
                     <p className='buy-text'>BUY</p>
                 </button>
-                <a href="https://www.example.com" className='view-text'>VIEW</a>
+                <div onClick={() => { navigate("/Room"); }} className='view-text'>VIEW</div>
             </div>
         </div>
     </div>
