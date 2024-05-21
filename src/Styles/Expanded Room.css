@@ -12,11 +12,22 @@
 }
 
 .Expanded-Room .left-container{
+    position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     cursor:default;
+}
+
+.Expanded-Room .left-container::after {
+    content: '';
+    position: absolute;
+    right: -65px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 380px;
+    border-right: 2px solid #535353;
 }
 
 .Expanded-Room .title{
@@ -34,7 +45,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position:relative;
 }
+
+.Expanded-Room .tickets-owned-container::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    border-right: 2px solid #535353;
+}
+
+
 
 .Expanded-Room .winning-chance-container{
     display: flex;
