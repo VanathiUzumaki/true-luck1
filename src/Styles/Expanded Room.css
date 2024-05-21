@@ -4,4 +4,119 @@
     background-image: url("../Images/Expanded-room-bg.png");
     background-size: contain;
     background-repeat: no-repeat;
+    font-family: 'Proto Mono';
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+}
+
+.Expanded-Room .left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor:default;
+}
+
+.Expanded-Room .title{
+    color: #FEBB3B;
+    font-size: 45px;
+}
+
+.Expanded-Room .tickets-container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.Expanded-Room .tickets-owned-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Expanded-Room .winning-chance-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Expanded-Room .tickets-owned,.winning-chance{
+    font-size: 20px;
+    text-shadow: 0px 1.5px 1.5px #DE0DB0;
+}
+
+.Expanded-Room .tickets-number,.winning-percentage{
+    color: #FBF5F5;
+    text-shadow: 0px 1.5px 9.375px #F7A64C;
+    font-family: "Proto Mono";
+    font-size: 45px;
+}
+
+.Expanded-Room .total-prizes{
+    font-size: 25px;
+}
+
+.Expanded-Room span{
+    font-size: 35px;
+    text-shadow: 0px 5px 4.04px #DE0DB0;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+}
+
+.Expanded-Room .right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Expanded-Room .entry-fee{
+    font-size: 25px;
+    text-shadow: 0px 4px 25px #FFF;
+}
+
+.Expanded-Room .participants,.tickets-remaining{
+    font-size: 20px;
+}
+
+.Expanded-Room  .buying-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.Expanded-Room  .counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Expanded-Room  .counter-number{
+    color: white;
+    font-size: 30px;
+    margin:0px;
+}
+
+.Expanded-Room  .buy-container{
+    width: 170px;
+    height: 60px;
+    border-radius: 14.189px;
+    border: 0.645px solid #FFD095;
+    background: linear-gradient(127deg, #FFF 5.23%, #FFF 195.56%);
+    box-shadow: 0px 2.58px 32.248px 0px #F7A64C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Expanded-Room  .buy-text{
+    font-size: 45px;
+    font-weight: bolder;
+    background: linear-gradient(83deg, #E79556 9.44%, #C86379 88.92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Proto Mono';
 }

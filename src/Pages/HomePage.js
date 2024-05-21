@@ -6,7 +6,7 @@ import Statistics_Overview from '../Components/Statistics Overview.js';
 
 function Home() {
   return (
-    <div className="App">
+    <div className="Home-Page">
       <Navbar {...jsonData.Navbar}/>
       <Rooms_Available {...jsonData.Rooms}/>
       <Statistics_Overview {...jsonData.Statistics_Overview}/>

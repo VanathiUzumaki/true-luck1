@@ -22,7 +22,7 @@ function ProfileDashboard() {
 
  
     return (
-      <div className="App">
+      <div className="Profile-Dashboard">
       <Navbar {...jsonData.Navbar}/>
       <Profile_Details/>
       <Profile_Options activeItem={activeItem} handleItemClick={handleItemClick}/>
