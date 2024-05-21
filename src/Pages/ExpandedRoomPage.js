@@ -2,7 +2,7 @@ import '../Styles/Expanded Room Page.css'
 import jsonData from '../Data.json';
 import Navbar from '../Components/Navbar.js';
 import Expanded_Room from '../Components/Expanded Room.js';
-import Statistics_Overview from '../Components/Statistics Overview.js';
+import Participants from '../Components/Participants.js';
 
 function ExpandedRoomPage() {
   return (
@@ -11,6 +11,7 @@ function ExpandedRoomPage() {
       <div className='Expanded-Room-Container'>
         <Expanded_Room {...jsonData.Rooms}/>
       </div>
+      <Participants/>
     </div>
   );
 }
