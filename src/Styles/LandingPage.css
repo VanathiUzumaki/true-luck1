@@ -1,0 +1,209 @@
+.landing-container {
+    background-image: url("../Images/Landing-sparkle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.landing-container .logo {
+    width: 90%;
+    max-width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing-container .logo-circle {
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../Images/Landin_Page_Circle_withoutbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.landing-container .circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+
+    text-shadow: 2.85px 4.487px 44.872px #DE0DB0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "VVDS Fifties";
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFD3AE 20.32%, #DE50F6 79.14%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.landing-container .circle-subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    text-shadow: 2px 5px 18.4px #C80E9F;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "VVDS Fifties";
+    background: linear-gradient(180deg, #fc3f74 51.75%, #d927ab 102.17%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.landing-container .logo-bottom {
+    width: 100%;
+    height: 78px;
+    margin-top: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-container .to-enter-app {
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+}
+
+.landing-container .stats {
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+
+.landing-container .enter-button {
+    width: 60%;
+    height: 90%;
+    align-items: center;
+    border-radius: 48px;
+    border: 1px solid #FFE3C0;
+    background: linear-gradient(380deg, #FEBB3B 4.33%, #8A00BE 174.3%);
+    box-shadow: 0px 6px 40px 9px #6E4305;
+    color: #FFF;
+    text-align: center;
+    font-family: "Proto Mono";
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.landing-container .rooms-active,
+.landing-container .funds-entered {
+    font-size: 17px;
+    margin: 5px 0;
+    color: #E34283;
+    text-shadow: 2px 5px 18.4px #C80E9F;
+    font-family: "Proto Mono";
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.landing-container .rooms-active {
+    padding-right: 7px;
+}
+
+.landing-container .funds-entered {
+    padding-left: 7px;
+}
+
+.landing-container .nadula-line {
+    border-left: 1px solid #434343;
+    height: 25px;
+}
+
+.landing-container .statustext {
+    color: white;
+    margin: 5px 0;
+    font-family: "Proto Mono";
+    line-height: normal;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-right: 11px;
+}
+.landing-container .launch-page,
+.landing-container .social-icons {
+    position: absolute;
+}
+
+.landing-container .launch-page {
+    top: 20px;
+    right: 20px;
+    width: 190px;
+    height: 50px;
+    
+}
+
+.landing-container .social-icons {
+    top: 50%;
+    right: 2px;
+    width: 50px;
+    height: 100px;
+    transform: translateY(-50%);
+}
+
+.landing-container .discord-logo,
+.landing-container .x-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.landing-container .x-logo {
+    margin-top: 10px;
+}
+
+.landing-container .launch-btn {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 48px;
+    border: 1px solid #FFE3C0;
+    background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+    box-shadow: 0px 6px 32px 12px rgba(110, 67, 5, 0.64);
+    color: #FFF;
+    text-align: center;
+    font-family: "Proto Mono";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .landing-container .launch-page {
+        display: none;
+    }
+
+    .landing-container .discord-logo,
+    .landing-container .x-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .landing-container .social-icons {
+        top: 62px;
+    }
+}
+

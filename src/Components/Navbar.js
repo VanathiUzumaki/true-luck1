@@ -30,7 +30,7 @@ function Navbar(props) {
 
   return (
     <div className='Nav'>
-      <div className='logo' onClick={() => { navigate("/"); }}>true luck</div>
+      <div className='logo' onClick={() => { navigate("/Home"); }}>true luck</div>
       <div className='nav-elements'>
         <div className='points'>POINTS:{props.points}</div>
         <div className='dropdown'>
