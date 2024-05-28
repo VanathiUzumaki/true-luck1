@@ -9,7 +9,7 @@ function App() {
  
   return (
     <div className="App">
-       <Router>
+       <Router basename="/true-luck">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Home" element={<Home />} />
