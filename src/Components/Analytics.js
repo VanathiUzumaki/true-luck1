@@ -4,7 +4,7 @@ function Analytics(){
     return(
         <div className="Analytics">
             <div className="RaffleStats">RAFFLES STATS</div>
-            <div className="FirstStats">
+            <div className="Stats_container">
                 <div className='stat'>
                     <div>Rooms won</div>
                     <div>7</div>
@@ -17,8 +17,6 @@ function Analytics(){
                     <div>TOTAL VOLUME</div>
                     <div>1.744</div>
                 </div>
-            </div>
-            <div className="FirstStats">
                 <div className='stat'>
                     <div>WINNING VOLUME</div>
                     <div>0.072</div>
