@@ -1,3 +1,10 @@
+.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+
 .Nav {
     display: flex;
     justify-content: space-between;
@@ -106,7 +113,7 @@
     .Nav .hamburger {
       display: block;
     }
-  
+    
     .Nav .mobile-menu {
       display: block;
       position: fixed;
@@ -117,6 +124,7 @@
       background-color: black;
       z-index: 9999;
       animation: slideDown 0.3s ease-in-out;
+      overflow: hidden;
     }
   
     .Nav .mobile-menu.closing {

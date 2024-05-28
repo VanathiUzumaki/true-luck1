@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import '../Styles/Navbar.css';
 import eth from '../Images/icon-eth.png';
 import drop from '../Images/icon-dropdown.png';
@@ -12,9 +13,13 @@ function Navbar(props) {
   const [menuClosing, setMenuClosing] = useState(false);
   const navigate = useNavigate();
 
-  const handleConnectWallet = () => {
-    console.log('Connect Wallet button clicked!');
-  };
+  useEffect(() => {
+    if (menuOpen || menuClosing) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [menuOpen, menuClosing]);
 
   const toggleMenu = () => {
     if (menuOpen) {
@@ -38,7 +43,7 @@ function Navbar(props) {
           <p className='dropdown-text'>ETH</p>
           <img src={drop} alt='drop' className='drop' />
         </div>
-        <button className='connect-wallet' onClick={handleConnectWallet}>
+        <button className='connect-wallet'>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
         <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
@@ -55,7 +60,7 @@ function Navbar(props) {
               <p className='dropdown-text'>ETH</p>
               <img src={drop} alt='drop' className='drop' />
             </div>
-            <button className='connect-wallet' onClick={handleConnectWallet}>
+            <button className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>
             <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
