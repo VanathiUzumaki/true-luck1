@@ -14,7 +14,7 @@ const LandingPage = () => {
                         true luck
                         <div className='circle-subtitle'>
                         The Multi Chain Casino
-                    </div>
+                        </div>
                     </div>
                     
                 </div>
