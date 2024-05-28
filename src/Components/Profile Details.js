@@ -14,7 +14,7 @@ function Profile_Details(props) {
                 </div>
             </div>
             <div className='profile-details-container'>
-                <p>AKIRA.PILL</p>
+                <p>AKIRA.PILLED</p>
                 <p>sdcsd 34ddff</p>
                 <div className='social-links'>
                     <img className='x-logo' src={x}/>
