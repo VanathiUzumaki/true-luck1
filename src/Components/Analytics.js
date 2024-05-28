@@ -3,7 +3,7 @@ import '../Styles/Analytics.css';
 function Analytics(){
     return(
         <div className="Analytics">
-            <div className="RaffleStats">RAFFLES STATS</div>
+            <div className="RaffleStats">RAFFLES STATISTICS</div>
             <div className="Stats_container">
                 <div className='stat'>
                     <div>Rooms won</div>
