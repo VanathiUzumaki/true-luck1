@@ -105,7 +105,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Proto Mono";
-    font-size: 23px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -165,8 +165,8 @@
 
 .landing-container .discord-logo,
 .landing-container .x-logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .landing-container .x-logo {
@@ -174,7 +174,7 @@
 }
 
 .landing-container .launch-btn {
-    height: 100%;
+    height: 90%;
     width: 100%;
     flex-shrink: 0;
     border-radius: 48px;
@@ -184,7 +184,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Proto Mono";
-    font-size: 20px;
+    font-size: 19px;
     cursor: pointer;
 }
 
@@ -197,10 +197,15 @@
     .landing-container .x-logo {
         width: 20px;
         height: 20px;
+        margin-right: 0px;
     }
 
+    .landing-container .x-logo{
+        margin-left: 10px;
+    }
     .landing-container .social-icons {
         top: 62px;
+        margin-right: 7px
     }
 }
 
