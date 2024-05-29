@@ -38,3 +38,19 @@
     height: 17px;
     border-right: 2px solid #800080;
 }
+
+@media (max-width:700px){
+    .Profile-Options {
+        margin:20px 5px 0px 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        border-bottom: 2px solid #434343;
+    }
+
+    .Profile-Options .nav-item {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    
+}
+

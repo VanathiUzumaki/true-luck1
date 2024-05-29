@@ -10,9 +10,9 @@ function App() {
  
   return (
     <div className="App">
-      <div className="particles-background">
+      {/* <div className="particles-background">
         <AnimatedParticles />
-      </div>
+      </div> */}
        <Router basename="/true-luck">
         <Routes>
           <Route path="/" element={<LandingPage />} />
