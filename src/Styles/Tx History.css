@@ -84,3 +84,15 @@
     width: 100px;
     text-align: center;
 }
+
+@media (max-width:700px){
+    .TX-History .Funds {
+        font-size: 25px;
+    
+    }
+    
+    .TX-History .EnteredNumerical {
+        font-size: 25px;
+    }
+
+}

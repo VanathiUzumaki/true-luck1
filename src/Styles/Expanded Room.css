@@ -101,7 +101,11 @@
     text-shadow: 0px 4px 25px #FFF;
 }
 
-.Expanded-Room .participants,.tickets-remaining{
+.Expanded-Room .tickets-remaining{
+    font-size: 20px;
+}
+
+.Expanded-Room .tickets-remaining{
     font-size: 20px;
 }
 

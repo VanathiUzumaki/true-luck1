@@ -1,13 +1,3 @@
-/* .room{
-    width: 400px;
-    height: 315px;
-    flex-shrink: 0;
-    background: linear-gradient(black, black) padding-box,
-                linear-gradient(135deg, #FEBB3B 0%, #e02cff 39%, #fb7fea 57%, #8C239E 100%) border-box;
-    border-radius: 30px;
-    border: 4px solid transparent;
-} */
-
 .room{
     width: 400px;
     height: 315px;
@@ -106,4 +96,30 @@
     text-transform: lowercase;
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .room{
+        width: 350px;
+        height: 275px;
+    }
+
+    .room .room-contents{
+        gap: 10px;
+    }
+
+    .room .room-price{
+        font-size: 27px;
+        margin-top: 4px;
+        margin-bottom: -5px;
+    }
+
+    .room .first-prize{
+        -webkit-text-stroke-width: 1.2px;
+        font-size: 27px;
+    }
+
+    .room .counter-number{
+        font-size: 27px;
+    }
 }
