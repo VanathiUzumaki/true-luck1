@@ -14,6 +14,11 @@
     margin:0px 10px;
 }
 
+.Referrals .link-container{
+    display: flex;
+    align-items: center;
+}
+
 .Referrals .link-input {
     background-color: transparent;
     border-image-source: linear-gradient(175deg,#FEBB3B, #8A00BE);
@@ -98,4 +103,44 @@
     transform: translateY(-50%);
     height: 17px;
     border-right: 2px solid #800080;
+}
+
+@media (max-width:700px){
+    .Referrals .generate-link-container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .Referrals .link-input {
+        width: 300px;
+        margin: 10px 10px;
+    }
+    .Referrals .overview{
+        color: #FFD3AE;
+        text-shadow: 0px -2px 20.4px #FFD3AE,0px 2px 20.4px #FFD3AE;
+        font-size: 33.46px;
+        padding: 12px;
+        margin-left: 20px;
+    }
+    .Referrals .overview-container{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .Referrals .overview{
+        font-size: 27px;
+        padding:10px 0px;
+        margin-left: 0px;
+    }
+    .Referrals .bottom-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Referrals .total-referrals{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .Referrals .total-earned{
+        font-size: 22px;
+    }
 }
