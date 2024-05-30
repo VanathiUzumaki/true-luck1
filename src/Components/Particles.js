@@ -15,7 +15,7 @@ const AnimatedParticles = () => {
     mount.appendChild(renderer.domElement);
 
     // Create particles
-    const particleCount = 50;  // Reduced number of particles
+    const particleCount = 65;  // Increased number of particles
     const particles = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
@@ -38,9 +38,9 @@ const AnimatedParticles = () => {
       positions[index + 1] = y;
       positions[index + 2] = Math.sin(angle) * radius;
 
-      speeds[index] = positions[index] * -0.001;  // Slower speed for inward movement
-      speeds[index + 1] = positions[index + 1] * -0.001;  // Slower speed for inward movement
-      speeds[index + 2] = positions[index + 2] * -0.001;  // Slower speed for inward movement
+      speeds[index] = (Math.random() - 0.5) * 2;  // Random speed for more natural movement
+      speeds[index + 1] = (Math.random() - 0.5) * 2;
+      speeds[index + 2] = (Math.random() - 0.5) * 2;
 
       const color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
       colors[index] = color.r;
@@ -56,7 +56,7 @@ const AnimatedParticles = () => {
     particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
     const particleMaterial = new THREE.PointsMaterial({
-      size: 1.0,  // Size to match the video
+      size: 3.0,  // Increased size for more visibility
       vertexColors: true,
       map: new THREE.TextureLoader().load('https://threejs.org/examples/textures/sprites/circle.png'), // Circle texture
       transparent: true,
@@ -79,10 +79,13 @@ const AnimatedParticles = () => {
         positions[i + 1] += speeds[i + 1];
         positions[i + 2] += speeds[i + 2];
 
-        // Reset particle if it moves past the camera view
-        if (Math.abs(positions[i]) < 1 && Math.abs(positions[i + 1]) < 1 && Math.abs(positions[i + 2]) < 1) {
-          initializeParticle(i);
-        }
+        // Wrap particles around the screen edges
+        if (positions[i] > 300) positions[i] = -300;
+        if (positions[i] < -300) positions[i] = 300;
+        if (positions[i + 1] > 150) positions[i + 1] = -150;
+        if (positions[i + 1] < -150) positions[i + 1] = 150;
+        if (positions[i + 2] > 300) positions[i + 2] = -300;
+        if (positions[i + 2] < -300) positions[i + 2] = 300;
       }
 
       particles.attributes.position.needsUpdate = true;
