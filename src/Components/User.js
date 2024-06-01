@@ -5,7 +5,6 @@ import eye from '../Images/eye.png'
 function User(props) {
   return (
     <div className="user-component">
-      
         <div className='users'>
           <img className='profile-pic' src={profile_pic} alt="Profile" />
           <p>{props.username}</p>

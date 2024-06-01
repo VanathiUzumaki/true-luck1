@@ -32,9 +32,11 @@ function Referrals(){
                     <div className='total-earned'>Total earned : <span className='green-text'>$152</span></div>
                 </div>
             </div>
-            <div className='options-container'>
-                <div className='option'>Participants</div>
-                <div className='option'>Activity</div>
+            <div className='mobile-options-container'>
+                <div className='options-container'>
+                    <div className='option'>Participants</div>
+                    <div className='option'>Activity</div>
+                </div>
             </div>
             <div className='referrals-users'>
                 <Referral_User/>

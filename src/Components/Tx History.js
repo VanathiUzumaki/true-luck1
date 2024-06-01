@@ -9,35 +9,17 @@ function Tx_History(props){
     return(
         <div className='TX-History'>
             <div className="Funds-Entered-Container">
-                <div  className='FundsEntered'>
-                    <div className='Funds'>FUNDS ENTERED:</div>
-                    <div className='EnteredNumerical'>$ 5000</div>
-                </div>
+                <div className='Funds'>FUNDS ENTERED: <span className='EnteredNumerical'>$5000</span></div>
             </div>
-            <div>
-            <div className='tx-history-transactions'>
+            <div className='transactions-container'>
                 <div className='tx-history-transaction-headings'>
-                    <div className='tx-history-transaction-hash'>
-                        <p>TRANSACIION HASH</p>
-                    </div>
-                    <div className='value'>
-                        <p>VALUE</p>
-                    </div>
-                    <div className='from'>
-                        <p>FROM</p>
-                    </div>
-                    <div className='age'>
-                        <p>AGE</p>
-                    </div>
-                    <div className='view'>
-                        <p>VIEW</p>
-                    </div>
+                    <div className='tx-history-transaction-hash'>TRANSACIION HASH</div>
+                    <div className='value'>VALUE</div>
+                    <div className='from'>FROM</div>
+                    <div className='age'>AGE</div>
+                    <div className='view'>VIEW</div>
                 </div>
-            
-            </div>
-            {props.Users.map((user, index) => (
-                    <User key={index} {...user} />
-                ))}
+                {props.Users.map((user, index) => (<User key={index} {...user} />))}
             </div>
         </div>
     );

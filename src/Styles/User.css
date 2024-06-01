@@ -64,3 +64,10 @@
 .user-component .eye {
     width:25px;
 }
+
+@media (max-width:700px){
+    .user-component{
+        width:1200px;
+    }
+
+}

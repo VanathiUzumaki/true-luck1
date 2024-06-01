@@ -7,10 +7,9 @@
     font-family: "Proto Mono";
     font-size: 15px;
     font-style: normal;
-  
 }
 
-.tx-history-user  .profile-pic {
+.tx-history-user .profile-pic {
     width: 30px;
 }
 
@@ -68,4 +67,10 @@
 
 .tx-history-user  .eye {
     width: 25px;
+}
+
+@media (max-width:700px){
+    .tx-history-user {
+        width:1000px;
+    }
 }

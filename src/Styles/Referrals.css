@@ -143,4 +143,9 @@
     .Referrals .total-earned{
         font-size: 22px;
     }
+
+    .Referrals .mobile-options-container{
+        display: flex;
+        justify-content: center;
+    }
 }

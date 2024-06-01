@@ -122,4 +122,12 @@
     .room .counter-number{
         font-size: 27px;
     }
+
+    .react-multiple-carousel__arrow--right {
+        right: 0px;
+      }
+      
+      .react-multiple-carousel__arrow--left {
+        left: -5px;
+      }
 }
