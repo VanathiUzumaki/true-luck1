@@ -94,3 +94,12 @@
     }
 
 }
+
+@media (max-width:999px){
+    .TX-History .transactions-container{
+        overflow: scroll;
+    }
+    .TX-History .tx-history-transaction-headings {
+        width: 1000px;
+    }
+}

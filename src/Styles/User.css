@@ -71,3 +71,10 @@
     }
 
 }
+
+@media (max-width:1199px){
+    .user-component{
+        width:1200px;
+    }
+
+}

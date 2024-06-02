@@ -117,3 +117,13 @@
         width: 1200px;
     }
 }
+
+@media (max-width:1199px){
+.statistics-overview .recent-transactions{
+    overflow: scroll;
+}
+
+.statistics-overview .transaction-headings{
+    width: 1200px;
+}
+}

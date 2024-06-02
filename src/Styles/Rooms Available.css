@@ -16,9 +16,6 @@
     margin-top: 25px;
 }
 
-.carousel{
-    margin-top: 25;
-}
 
 .react-multi-carousel-list{
     position: unset !important;
@@ -27,18 +24,6 @@
   .react-multiple-carousel__arrow{
     cursor: pointer !important;
   }
-
-  /* .react-multiple-carousel__arrow--right::before{
-    background-image: url("../Images/carousel_arrow.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .react-multiple-carousel__arrow--left::before{
-    background-image: url("../Images/carousel_arrow_o.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  } */
 
   .react-multiple-carousel__arrow::before {
     font-size: 40px;
@@ -63,4 +48,27 @@
 
 .react-multiple-carousel__arrow--left {
   left: calc(4% + -65px);
+}
+
+@media(max-width:700px){
+  .react-multiple-carousel__arrow--right {
+    right: 0px;
+  }
+  
+  .react-multiple-carousel__arrow--left {
+    left: -5px;
+  }
+  .react-multiple-carousel__arrow::before {
+    font-size: 30px;
+}
+}
+
+@media (max-width:412px) {
+  .react-multiple-carousel__arrow--right {
+    right: -5px;
+  }
+  
+  .react-multiple-carousel__arrow--left {
+    left: -7px;
+  }
 }

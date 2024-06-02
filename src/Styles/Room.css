@@ -104,6 +104,7 @@
     .room{
         width: 350px;
         height: 275px;
+        background-image: url("../Images/Room-bg-mobile.png");
     }
 
     .room .room-contents{
@@ -124,14 +125,6 @@
     .room .counter-number{
         font-size: 27px;
     }
-
-    .react-multiple-carousel__arrow--right {
-        right: 0px;
-      }
-      
-      .react-multiple-carousel__arrow--left {
-        left: -5px;
-      }
 }
 
 @media (max-width:412px) {
@@ -145,12 +138,4 @@
         -webkit-text-stroke-width: 1px;
         font-size: 25px;
     }
-    
-    .react-multiple-carousel__arrow--right {
-        right: -5px;
-      }
-      
-      .react-multiple-carousel__arrow--left {
-        left: -7px;
-      }
 }
