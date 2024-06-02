@@ -66,12 +66,12 @@
     align-items: center;
 }
 
-.Expanded-Room .tickets-owned,.winning-chance{
+.Expanded-Room .tickets-owned,.Expanded-Room .winning-chance{
     font-size: 20px;
     text-shadow: 0px 1.5px 1.5px #DE0DB0;
 }
 
-.Expanded-Room .tickets-number,.winning-percentage{
+.Expanded-Room .tickets-number,.Expanded-Room .winning-percentage{
     color: #FBF5F5;
     text-shadow: 0px 1.5px 9.375px #F7A64C;
     font-family: "Proto Mono";
@@ -101,10 +101,9 @@
     text-shadow: 0px 4px 25px #FFF;
 }
 
-.Expanded-Room .tickets-remaining{
+.Expanded-Room .participants{
     font-size: 20px;
 }
-
 .Expanded-Room .tickets-remaining{
     font-size: 20px;
 }
@@ -147,4 +146,95 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Proto Mono';
+}
+
+@media (max-width:700px){
+    .Expanded-Room{
+        background-image: url("../Images/Expanded-room-bg-mobile.png");
+        width: 360px;
+        height: 657.82px;
+        background-size: contain;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .Expanded-Room .title{
+        color: #FEBB3B;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .Expanded-Room .tickets-container{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    .Expanded-Room .tickets-owned-container::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 65px;
+        border-right: 2px solid #535353;
+    }
+    
+    
+    
+    .Expanded-Room .winning-chance-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Expanded-Room .tickets-owned,.Expanded-Room .winning-chance{
+        font-size: 18px;
+        text-shadow: 0px 1.5px 1.5px #DE0DB0;
+    }
+    
+    .Expanded-Room .tickets-number,.Expanded-Room .winning-percentage{
+        color: #FBF5F5;
+        text-shadow: 0px 1.5px 9.375px #F7A64C;
+        font-family: "Proto Mono";
+        font-size: 35px;
+    }
+
+    .Expanded-Room .total-prizes{
+        margin: 15px 0px;
+        font-size: 23px;
+    }
+    
+    .Expanded-Room span{
+        font-size: 30px;
+        text-shadow: 0px 5px 4.04px #DE0DB0;
+        -webkit-text-stroke-width: 1;
+        -webkit-text-stroke-color: #000;
+    }
+
+    .Expanded-Room .right-container{
+        gap:10px;
+    }
+
+    .Expanded-Room .entry-fee{
+        font-size: 21px;
+        text-shadow: 0px 4px 25px #FFF;
+        margin: 20px 0px;
+    }
+    
+    .Expanded-Room .participants{
+        font-size: 20px;
+    }
+    .Expanded-Room .tickets-remaining{
+        font-size: 20px;
+    }
+
+    .Expanded-Room  .buying-section{
+        margin-top: 15px;
+    }
+
+    .Expanded-Room  .buy-text{
+        font-size: 35px;
+    }
+
 }

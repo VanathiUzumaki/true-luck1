@@ -38,21 +38,20 @@
     transform: translate(-50%, -60%);
     text-align: center;
     pointer-events: none;
-    text-shadow: 2.85px 4.487px 44.872px #DE0DB0;
+    white-space: nowrap;
+    font-size: 110px;
+    font-family: 'TrueLuck';
+    text-shadow: 0.903px 1.421px 14.215px #DE0DB0;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFF;
-    font-family: "VVDS Fifties";
-    font-size: 107px;
+    -webkit-text-stroke-color: #FFE5E5;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    background: linear-gradient(180deg, #fcada9 20.32%, #ff7682 79.14%);
-    font-weight: bold;
+    background: linear-gradient(180deg, #FFD3AE 16.69%, #DE50F6 79.14%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+    cursor: pointer;
 }
 
 .landing-container .circle-subtitle {
@@ -63,14 +62,14 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     text-shadow: 2px 5px 18.4px #C80E9F;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: #FFF;
-    font-family: "VVDS Fifties";
+    font-family: "Proto Mono";
     background: linear-gradient(180deg, #fc3f74 51.75%, #d927ab 102.17%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 34px;
+    font-size: 27px;
 }
 .landing-container .logo-bottom {
     width: 100%;
@@ -84,7 +83,7 @@
 
 .landing-container .to-enter-app {
     width:300px;
-    height: 65%;
+    height: 78px;
 }
 
 .landing-container .stats {
@@ -93,7 +92,7 @@
 
 .landing-container .enter-button {
     width: 300px;
-    height: 90%;
+    height: 45px;
     align-items: center;
     border-radius: 48px;
     border: 1px solid #FFE3C0;
@@ -102,7 +101,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Proto Mono";
-    font-size: 16px;
+    font-size: 19px;
     cursor: pointer;
 }
 
@@ -125,7 +124,7 @@
     padding-left: 7px;
 }
 
-.landing-container .nadula-line {
+.landing-container .line-inbetween{
     border-left: 1px solid #434343;
     height: 25px;
 }
@@ -206,11 +205,11 @@
     }
 
     .landing-container .circle-text {
-        font-size: 60px;
+        font-size: 65px;
     }
 
     .landing-container .circle-subtitle {
-        font-size: 23px;
+        font-size: 17px;
     }
 
 }

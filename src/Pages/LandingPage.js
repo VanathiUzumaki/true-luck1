@@ -49,7 +49,7 @@ const LandingPage = () => {
                     <div className='stats'>
                         <p className="rooms-active">{roomText}</p>
                         <p className="statustext">4</p>
-                        <div className="nadula-line"></div>
+                        <div className="line-inbetween"></div>
                         <p className="funds-entered">{fundsText}</p>
                         <p className="statustext">$2500</p>
                     </div>
