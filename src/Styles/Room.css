@@ -98,6 +98,8 @@
     cursor: pointer;
 }
 
+
+
 @media (max-width:700px) {
     .room{
         width: 350px;
@@ -129,5 +131,26 @@
       
       .react-multiple-carousel__arrow--left {
         left: -5px;
+      }
+}
+
+@media (max-width:412px) {
+    .room{
+        width: 330px;
+        height: 275px;
+        background-image: url("../Images/room-bg-330.png");
+    }
+
+    .room .first-prize{
+        -webkit-text-stroke-width: 1px;
+        font-size: 25px;
+    }
+    
+    .react-multiple-carousel__arrow--right {
+        right: -5px;
+      }
+      
+      .react-multiple-carousel__arrow--left {
+        left: -7px;
       }
 }
