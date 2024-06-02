@@ -90,15 +90,15 @@
   .Nav .hamburger {
     display: none;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 8px;
     z-index: 10000;
-    width: 35px;
-    height: 35px;
+    width: 27px;
+    height: 27px;
   }
   
   .Nav .hamburger img {
-    width: 35px;
-    height: 35px;
+    width: 27px;
+    height:27px;
   }
 
   .mobile-menu{

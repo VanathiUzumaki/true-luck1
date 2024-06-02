@@ -236,5 +236,8 @@
     .Expanded-Room  .buy-text{
         font-size: 35px;
     }
-
+    .Expanded-Room .left-container::after{
+        display: none;
+        content: none;
+    }
 }
