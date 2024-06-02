@@ -152,7 +152,7 @@
     .Expanded-Room{
         background-image: url("../Images/Expanded-room-bg-mobile.png");
         width: 360px;
-        height: 657.82px;
+        height: 580px;
         background-size: contain;
         flex-direction: column;
         justify-content: start;
