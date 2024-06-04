@@ -62,7 +62,7 @@
     cursor: default;
   }
   
-  .Nav .points, .dropdown-text, .connect-wallet-text {
+  .Nav .points, .Nav .dropdown-text, .Nav .connect-wallet-text {
     color: white;
     font-family: 'Proto Mono';
     font-size: 17px;
