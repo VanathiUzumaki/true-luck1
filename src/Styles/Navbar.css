@@ -70,8 +70,6 @@
   }
   
   .Nav .connect-wallet {
-    width: 170.125px;
-    height: 28.095px;
     border-radius: 12px;
     border: 1px solid #FFD095;
     background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
@@ -79,6 +77,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding: 2px 10px;
   }
   
   .Nav .profile-icon {
