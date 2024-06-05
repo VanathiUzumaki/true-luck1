@@ -168,6 +168,10 @@
         display: none;
     }
 
+    .landing-container .logo {
+        width: 95%;
+    }
+
     .landing-container .discord-logo,
     .landing-container .x-logo {
         width: 25px;
@@ -188,7 +192,8 @@
     }
 }
 
-@media (max-width: 386px) {
+
+@media (max-width: 396px) {
     .landing-container .enter-button {
         padding: 10px 50px;
     }
@@ -201,5 +206,10 @@
     .landing-container .statustext {
         font-size: 17px;
     }
+}
 
+@media (max-width: 460px) {
+    .landing-container .logo {
+        width: 100%;
+    }
 }
