@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
+  const [dropdown, setdropdown] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,6 +34,10 @@ function Navbar(props) {
     }
   };
 
+  const toggleDropdown = () => {
+    setdropdown(!dropdown);
+  };
+
   return (
     <div className='Nav'>
       <div className='logo' onClick={() => { navigate("/Home"); }}>
@@ -43,15 +48,17 @@ function Navbar(props) {
         <div className='dropdown'>
           <img src={eth} alt='eth' className='eth' />
           <p className='dropdown-text'>ETH</p>
-          <img src={drop} alt='drop' className='drop' />
+          <img src={drop} alt='drop' onClick={toggleDropdown} className={`drop ${dropdown ? 'opendropdown' : ''}`} />
         </div>
         <button className='connect-wallet'>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
         <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
       </div>
-      <div className='hamburger' onClick={toggleMenu}>
-        <img src={menuOpen && !menuClosing ? closeIcon : hamburgerIcon} alt='menu-icon' />
+      <div className='hamburger'>
+        <label class="hamburger-menu">
+          <input onClick={toggleMenu} type="checkbox" />
+        </label>
       </div>
       {(menuOpen || menuClosing) && (
         <div className={`mobile-menu ${menuClosing ? 'closing' : ''}`}>
@@ -60,7 +67,7 @@ function Navbar(props) {
             <div className='dropdown'>
               <img src={eth} alt='eth' className='eth' />
               <p className='dropdown-text'>ETH</p>
-              <img src={drop} alt='drop' className='drop' />
+              <img src={drop} alt='drop' onClick={toggleDropdown} className={`drop ${dropdown ? 'opendropdown' : ''}`} />
             </div>
             <button className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>

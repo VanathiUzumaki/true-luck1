@@ -36,6 +36,11 @@
   .Nav .drop {
     width: 30px;
     cursor: pointer;
+    transition: transform 0.6s ease;
+  }
+
+  .Nav .drop.opendropdown {
+    transform: rotate(180deg);
   }
   
   .Nav .nav-elements {
@@ -87,12 +92,7 @@
     margin-right: 8px;
     z-index: 10000;
     width: 27px;
-    height: 27px;
-  }
-  
-  .Nav .hamburger img {
-    width: 27px;
-    height:27px;
+    height: 19px;
   }
 
   .mobile-menu{
@@ -156,5 +156,78 @@
         transform: translateY(-100%);
       }
     }
+  }
+  
+  :root {
+    --bar-width: 27px;
+    --bar-height: 3px;
+    --hamburger-gap: 5px;
+    --foreground: white;
+    --background: white;
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
+  
+  .Nav .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .Nav .hamburger-menu:has(input:checked) {
+    --foreground: white;
+    --background: #333;
+  }
+  
+  .Nav .hamburger-menu:has(input:focus-visible)::before,
+  .Nav .hamburger-menu:has(input:focus-visible)::after,
+  .Nav .hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  
+  .Nav .hamburger-menu::before,
+  .Nav .hamburger-menu::after,
+  .Nav .hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .Nav .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .Nav  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .Nav .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  
+  .Nav .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
   }
   
