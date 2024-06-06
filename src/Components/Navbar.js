@@ -4,14 +4,12 @@ import '../Styles/Navbar.css';
 import eth from '../Images/icon-eth.png';
 import drop from '../Images/icon-dropdown.png';
 import profileicon from '../Images/profile-icon.png';
-import hamburgerIcon from '../Images/hamburger-icon.png';
-import closeIcon from '../Images/close-icon.png';
+import Dropdown from './Dropdown';
 import { useNavigate } from "react-router-dom";
 
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
-  const [dropdown, setdropdown] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -34,10 +32,6 @@ function Navbar(props) {
     }
   };
 
-  const toggleDropdown = () => {
-    setdropdown(!dropdown);
-  };
-
   return (
     <div className='Nav'>
       <div className='logo' onClick={() => { navigate("/Home"); }}>
@@ -45,11 +39,7 @@ function Navbar(props) {
       </div>
       <div className='nav-elements'>
         <div className='points'>POINTS:{props.points}</div>
-        <div className='dropdown'>
-          <img src={eth} alt='eth' className='eth' />
-          <p className='dropdown-text'>ETH</p>
-          <img src={drop} alt='drop' onClick={toggleDropdown} className={`drop ${dropdown ? 'opendropdown' : ''}`} />
-        </div>
+        <Dropdown/>
         <button className='connect-wallet'>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
@@ -64,11 +54,7 @@ function Navbar(props) {
         <div className={`mobile-menu ${menuClosing ? 'closing' : ''}`}>
           <div className='mobile-menu-content'>
             <div className='points'>POINTS:{props.points}</div>
-            <div className='dropdown'>
-              <img src={eth} alt='eth' className='eth' />
-              <p className='dropdown-text'>ETH</p>
-              <img src={drop} alt='drop' onClick={toggleDropdown} className={`drop ${dropdown ? 'opendropdown' : ''}`} />
-            </div>
+            <Dropdown/>
             <button className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>
