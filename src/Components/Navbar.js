@@ -7,10 +7,12 @@ import profileicon from '../Images/profile-icon.png';
 import hamburgerIcon from '../Images/hamburger-icon.png';
 import closeIcon from '../Images/close-icon.png';
 import { useNavigate } from "react-router-dom";
+import Connect_wallet from '../Components/Connect Wallet.js';
 
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
+  const [connectWallet, setConectWallet] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -43,7 +45,7 @@ function Navbar(props) {
           <p className='dropdown-text'>ETH</p>
           <img src={drop} alt='drop' className='drop' />
         </div>
-        <button className='connect-wallet'>
+        <button className='connect-wallet' onClick={() => setConectWallet(true)}>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
         <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
@@ -62,11 +64,12 @@ function Navbar(props) {
             </div>
             <button className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
-            </button>
+            </button>          
             <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
           </div>
         </div>
       )}
+        {connectWallet && <Connect_wallet onClose={() => setConectWallet(false)} />}
     </div>
   );
 }
