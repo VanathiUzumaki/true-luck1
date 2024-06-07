@@ -6,10 +6,13 @@ import drop from '../Images/icon-dropdown.png';
 import profileicon from '../Images/profile-icon.png';
 import Dropdown from './Dropdown';
 import { useNavigate } from "react-router-dom";
+import Connect_wallet from '../Components/Connect Wallet.js';
 
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
+  const [connectWallet, setConectWallet] = useState(false);
+  const [dropdown, setdropdown] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,7 +43,7 @@ function Navbar(props) {
       <div className='nav-elements'>
         <div className='points'>POINTS:{props.points}</div>
         <Dropdown/>
-        <button className='connect-wallet'>
+        <button className='connect-wallet' onClick={() => setConectWallet(true)}>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
         <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
@@ -57,11 +60,12 @@ function Navbar(props) {
             <Dropdown/>
             <button className='connect-wallet'>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
-            </button>
+            </button>          
             <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
           </div>
         </div>
       )}
+        {connectWallet && <Connect_wallet onClose={() => setConectWallet(false)} />}
     </div>
   );
 }
