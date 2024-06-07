@@ -1,5 +1,4 @@
 .Dropdown {
-    width:159px;
     position: relative;
 
   }
@@ -10,7 +9,6 @@
     gap: 6px;
     cursor: default;
     position: relative;
-
   }
 
   .Dropdown .dropdown-text {
@@ -55,7 +53,7 @@
   }
   
   .menu-dropdown {
-    min-width: 100%;
+    min-width: 120%;
     padding: 15px 0;
     position: absolute;
     background: black;
@@ -67,6 +65,7 @@
     top:35px;
     transition:
       0.5s padding;
+    left:-15px
   }
   
   .menu-dropdown > * {
