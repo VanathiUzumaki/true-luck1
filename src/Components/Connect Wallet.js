@@ -10,9 +10,12 @@ function Connect_Wallet({ onClose }) {
     return (
         <div className="connect_modal">
             <div className="connect_modal_container">
-              <div className='choosewallet'>CHOOSE YOUR WALLET
+                <div className='connect_modal_header'>
+                <div className='choosewallet'>CHOOSE YOUR WALLET
              </div>
              <button  className="close-button" onClick={onClose}>X</button>
+                </div>
+            
                 <div className='metamask'>
                     <img className='icon' src={metamask} alt='metamask' />
                     <div className='text'>METAMASK</div>
