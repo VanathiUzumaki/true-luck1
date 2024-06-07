@@ -58,7 +58,7 @@ function Navbar(props) {
           <div className='mobile-menu-content'>
             <div className='points'>POINTS:{props.points}</div>
             <Dropdown/>
-            <button className='connect-wallet'>
+            <button className='connect-wallet' onClick={() => setConectWallet(true)}>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>          
             <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />

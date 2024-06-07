@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import '../Styles/Connect Wallet.css';
 import metamask from '../Images/MetaMask.png';
 import coinbase from '../Images/Coinbase.png';
@@ -7,13 +8,22 @@ import trust from '../Images/Trust.png';
 import arrow from '../Images/test.png'
 
 function Connect_Wallet({ onClose }) {
+
+    const [isClosing, setIsClosing] = useState(false);
+
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500);
+    };
     return (
-        <div className="connect_modal">
-            <div className="connect_modal_container">
+        <div className={`connect_modal ${isClosing ? 'closing' : ''}`}>
+            <div className={`connect_modal_container ${isClosing ? 'closing' : ''}`}>
                 <div className='connect_modal_header'>
                 <div className='choosewallet'>CHOOSE YOUR WALLET
              </div>
-             <button  className="close-button" onClick={onClose}>X</button>
+             <button  className="close-button" onClick={handleClose}>X</button>
                 </div>
             
                 <div className='metamask'>
