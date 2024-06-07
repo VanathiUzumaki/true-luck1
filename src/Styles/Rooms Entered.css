@@ -19,6 +19,38 @@
     margin-left: 10px;
 }
 
+.Rooms-Entered .rooms-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:35px;
+}
+
+.Rooms-Entered .room-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:1750px){
+    .Rooms-Entered .rooms-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap:35px;
+    }
+}
+@media (max-width:1250px){
+    .Rooms-Entered .rooms-container{
+        grid-template-columns: 1fr 1fr;
+        row-gap:35px;
+    }
+}
+
+@media (max-width:830px){
+    .Rooms-Entered .rooms-container{
+        grid-template-columns: 1fr;
+        row-gap:35px;
+    }
+}
+
 @media (max-width:700px){
     .Rooms-Entered .Room-Stats{
         margin: 15px 0px 0px 0px;

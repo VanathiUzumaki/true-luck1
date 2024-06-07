@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Carousel from 'react-multi-carousel';
 import '../Styles/Rooms Entered.css';
 import Room from './Room';
 
@@ -31,16 +30,15 @@ const Rooms_Entered = (props) => {
                 <div>Ended : 4</div>
                 <div>Won : 6</div>
             </div>
-            <Carousel infinite={true} responsive={responsive} className='carousel'>
-                <div className='rooms'> <Room {...props}/> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-                <div className='rooms'> <Room {...props} /> </div>
-            </Carousel>
+            <div className='rooms-container'>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props}/></div>
+            </div>
         </div>
     );
 }
