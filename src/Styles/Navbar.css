@@ -99,7 +99,7 @@
     display: none;
   }
   
-  @media (max-width: 700px) {
+  @media (max-width: 770px) {
     .Nav .logo svg{
       width:90px;
       height: 100%;
