@@ -9,7 +9,7 @@ function Side_Popup({ onClose }) {
             <div className="modal_container">
                 <div className="modal_top">
                     <span className="modal_code">TYIUDXFLC 78FKJHUH</span>
-                    {/* <button className="modal_close">X</button> */}
+                    <button className="modal_close" onClick={onClose}>X</button>
                 </div>
                 <div className="modal_nickname">
                     <label htmlFor="nickname">Nickname:</label>

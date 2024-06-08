@@ -1,4 +1,3 @@
-
 .modal {
     position: fixed;
     top: 0;
@@ -19,26 +18,44 @@
     color: white;
     text-align: center;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid white
+    border: 1px solid white;
+    background-color: black;
 }
 
 .modal_top {
     margin-bottom: 35px;
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid white;
     display: inline-block; 
+    position: relative
 }
-
 .modal_code {
     font-family: 'Proto Mono';
     font-size: 16px;
 }
 
 .modal_close {
-    background: none;
+    position: absolute;
+    bottom: 3px;
+    left: 237px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%);
+    background-size: 300%;
+    background-position: 97%;
+    font-weight: bolder;
+    transition: all 0.4s ease;
     border: none;
     color: white;
+    border-radius: 3px;
     font-size: 20px;
     cursor: pointer;
+
+}
+
+.modal_close:hover {
+    background-position: 0;
+    color: #E34283;
 }
 
 .modal_nickname {
@@ -59,7 +76,7 @@
     /* border-radius: 5px; */
     border: 1px solid white;
     /* background: #1e1e1e; */
-    background : black;
+    background: black;
     color: white;
     font-family: 'Proto Mono';
 }
@@ -92,7 +109,7 @@
 
 .modal_verifywallet,
 .modal_signup {
-   
+
     padding: 6px 0;
     font-family: 'Proto Mono';
     cursor: pointer;
@@ -106,7 +123,7 @@
     width: 65%;
     font-size: 15px;
     margin-bottom: 35px;
-   
+
 }
 
 .modal_signup {
