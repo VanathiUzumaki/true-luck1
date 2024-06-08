@@ -21,7 +21,7 @@ function Room(props) {
         }
       };
 
-    const OnBuyButtonclick = () => {
+    const onBuyButtonclick = () => {
         const audio = new Audio(CashRegisterAudio);
         audio.play();
         console.log(showNotification);
@@ -48,7 +48,7 @@ function Room(props) {
                     <p className='counter-number'>{tickets}</p>
                     <img src={down_arrow} onClick={DownButton}/>       
                 </div>
-                <button className='buy-container' onClick={OnBuyButtonclick}>
+                <button className='buy-container' onClick={onBuyButtonclick}>
                     <p className='buy-text'>BUY</p>
                 </button>
                 <div onClick={() => { navigate("/Room"); }} className='view-text'>VIEW</div>
