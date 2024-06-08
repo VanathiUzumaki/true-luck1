@@ -164,7 +164,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .landing-container .launch-page {
         display: none;
     }
@@ -223,7 +223,7 @@
 
 @media (max-aspect-ratio: 1/1) {
     .landing-container .logo-circle {
-      width: 95vw;
+      width: 90vw;
     }
     .landing-container .logo {
         justify-content: center;
