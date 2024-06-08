@@ -27,7 +27,7 @@
 }
 
 .landing-container .logo-circle {
-    width: 80vh;
+    width: 85vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -169,8 +169,11 @@
         display: none;
     }
 
-    .landing-container .logo {
-        width: 95%;
+    .landing-container .logo{
+        justify-content: center;
+    }
+    .landing-container .logo-circle {
+        width: 95vw;
     }
 
     .landing-container .discord-logo,
@@ -209,8 +212,27 @@
     }
 }
 
-@media (max-width: 460px) {
-    .landing-container .logo {
-        width: 100%;
+/* @media (max-width: 460px) {
+    .landing-container .logo{
+        justify-content: center;
     }
+    .landing-container .logo-circle {
+        width: 95vw;
+    }
+} */
+
+@media (max-aspect-ratio: 1/1) {
+    .landing-container .logo-circle {
+      width: 95vw;
+    }
+    .landing-container .logo {
+        justify-content: center;
+  }
 }
+
+  /* If the viewport height is less than the width */
+  @media (min-aspect-ratio: 1/1) {
+    .landing-container .logo-circle {
+      width: 85vh;
+    }
+  }
