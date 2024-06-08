@@ -27,7 +27,7 @@
 }
 
 .landing-container .logo-circle {
-    width: 80vh;
+    width: 85vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,8 +57,6 @@
     transform: translate(-50%, -50%);
     width:66%;
 }
-
-
 
 
 .landing-container .logo-bottom {
@@ -164,13 +162,16 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .landing-container .launch-page {
         display: none;
     }
 
-    .landing-container .logo {
-        width: 95%;
+    .landing-container .logo{
+        justify-content: center;
+    }
+    .landing-container .logo-circle {
+        width: 95vw;
     }
 
     .landing-container .discord-logo,
@@ -208,9 +209,61 @@
         font-size: 17px;
     }
 }
+@media (max-height: 500px) {
+    .landing-container .enter-button {
+        padding: 4px 50px;
+    }
 
-@media (max-width: 460px) {
-    .landing-container .logo {
-        width: 100%;
+    .landing-container .rooms-active,
+    .landing-container .funds-entered {
+    font-size: 17px;
+    }
+
+    .landing-container .statustext {
+        font-size: 17px;
+    }
+    .landing-container .social-icons {
+        top: 50%;
+        right: 2px;
+        width: 24px;
+        height: 100px;
+        transform: translateY(-50%);
+        margin-right: 10px;
+    }
+    .landing-container .discord-logo,
+    .landing-container .x-logo {
+        width: 25px;
+        height: 25px;
+    }
+    .landing-container .x-logo {
+        margin-left: 0px;
+    }
+
+    .landing-container .launch-btn {
+        padding: 5px 15px;
+        border-radius: 48px;
+        border: 1px solid #FFE3C0;
+        background: linear-gradient(124deg, #FEBB3B 4.33%, #8A00BE 157.3%);
+        box-shadow: 0px 6px 32px 12px rgba(110, 67, 5, 0.64);
+        color: #FFF;
+        text-align: center;
+        font-family: "Proto Mono";
+        font-size: 17px;
+        cursor: pointer;
     }
 }
+
+@media (max-aspect-ratio: 1/1) {
+    .landing-container .logo-circle {
+      width: 90vw;
+    }
+    .landing-container .logo {
+        justify-content: center;
+  }
+}
+
+  @media (min-aspect-ratio: 1/1) {
+    .landing-container .logo-circle {
+      width: 85vh;
+    }
+  }
