@@ -5,6 +5,7 @@ import eth from '../Images/icon-eth.png';
 import drop from '../Images/icon-dropdown.png';
 import profileicon from '../Images/profile-icon.png';
 import Dropdown from './Dropdown';
+import Profile_Dropdown from './Profile Dropdown.js';
 import { useNavigate } from "react-router-dom";
 import Connect_wallet from '../Components/Connect Wallet.js';
 
@@ -59,7 +60,7 @@ const handleItemClick = (item) => {
         <button className='connect-wallet' onClick={() => setConectWallet(true)}>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
-        <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
+        <Profile_Dropdown/>
       </div>
       <div className='hamburger'>
         <label class="hamburger-menu">
