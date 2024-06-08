@@ -1,9 +1,9 @@
 .Notification-modal {
     width: 338px;
     height: 60px;
-    position: fixed;
-    left: -338px; 
-    top: calc(100vh - 50px - 50px);
+    position:fixed;
+    left: -20px; 
+    bottom: 50px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);

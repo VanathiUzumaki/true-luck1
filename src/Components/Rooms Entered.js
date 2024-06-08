@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Rooms Entered.css';
 import Room from './Room';
+import Notification from "./Notification";
 
 const Rooms_Entered = (props) => {
     const responsive = {
@@ -23,6 +24,13 @@ const Rooms_Entered = (props) => {
         }
       };
 
+      const [showNotification, setShowNotification] = useState(false);
+  const handleNotification = () => {
+    setShowNotification(true)
+    setTimeout(() => {
+      setShowNotification(false);
+  }, 4000);
+}
     return (
         <div className="Rooms-Entered">
             <div className='Room-Stats'>
@@ -31,14 +39,16 @@ const Rooms_Entered = (props) => {
                 <div>Won : 6</div>
             </div>
             <div className='rooms-container'>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
-              <div className='room-container'><Room {...props}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
+              <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
             </div>
+            {showNotification && <Notification/>}
         </div>
     );
 }

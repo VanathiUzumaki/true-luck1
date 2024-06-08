@@ -1,7 +1,9 @@
 import Carousel from 'react-multi-carousel';
+import React, { useState } from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import '../Styles/Rooms Available.css';
 import Room from './Room.js'
+import Notification from "./Notification";
 
 function Rooms_Available(props) {
   const responsive = {
@@ -22,21 +24,33 @@ function Rooms_Available(props) {
       items: 1
     }
   };
+
+  const [showNotification, setShowNotification] = useState(false);
+  const handleNotification = () => {
+    setShowNotification(true)
+    setTimeout(() => {
+      setShowNotification(false);
+  }, 4000);
+
+  }
+
+
   return (
     <div className='rooms-available'>
       <div className='rooms-available-text'>Rooms Available:</div>
       <Carousel
       infinite={true}
       responsive={responsive} className='carousel'>
-        <div className='rooms'> <Room {...props}/> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
-        <div className='rooms'> <Room {...props} /> </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
       </Carousel>
+      {showNotification && <Notification/>}
     </div>
 
   );
