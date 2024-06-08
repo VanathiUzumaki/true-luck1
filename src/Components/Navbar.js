@@ -12,8 +12,21 @@ function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuClosing, setMenuClosing] = useState(false);
   const [connectWallet, setConectWallet] = useState(false);
-  const [dropdown, setdropdown] = useState(false);
   const navigate = useNavigate();
+
+  const [dropdown, setDropdown] = useState(false);
+  const [selectedItem, setSelectedItem] = useState('ETH');
+  const [selectedImage, setSelectedImage] = useState('ETH');
+
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
+  };
+
+const handleItemClick = (item) => {
+    setSelectedItem(item);
+    setSelectedImage(item);
+    setDropdown(false);
+};
 
   useEffect(() => {
     if (menuOpen || menuClosing) {
@@ -42,7 +55,7 @@ function Navbar(props) {
       </div>
       <div className='nav-elements'>
         <div className='points'>POINTS:{props.points}</div>
-        <Dropdown/>
+        <Dropdown dropdown={dropdown} selectedItem={selectedItem} selectedImage={selectedImage} toggleDropdown={toggleDropdown} handleItemClick={handleItemClick}/>
         <button className='connect-wallet' onClick={() => setConectWallet(true)}>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
@@ -57,8 +70,8 @@ function Navbar(props) {
         <div className={`mobile-menu ${menuClosing ? 'closing' : ''}`}>
           <div className='mobile-menu-content'>
             <div className='points'>POINTS:{props.points}</div>
-            <Dropdown/>
-            <button className='connect-wallet'>
+            <Dropdown dropdown={dropdown} selectedItem={selectedItem} selectedImage={selectedImage} toggleDropdown={toggleDropdown} handleItemClick={handleItemClick}/>
+            <button className={`connect-wallet ${dropdown ? 'extra-margin' : ''}`} onClick={() => setConectWallet(true)}>
               <p className='connect-wallet-text'>CONNECT WALLET</p>
             </button>          
             <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />

@@ -25,23 +25,10 @@
   }
 
   .Nav .logo svg{
-    width:105px;
+    width:125px;
     height: 100%;
   }
   
-  .Nav .eth {
-    width: 30px;
-  }
-  
-  .Nav .drop {
-    width: 30px;
-    cursor: pointer;
-    transition: transform 0.6s ease;
-  }
-
-  .Nav .drop.opendropdown {
-    transform: rotate(180deg);
-  }
   
   .Nav .nav-elements {
     width: 70%;
@@ -51,18 +38,11 @@
     gap: 3%;
   }
   
-  .Nav .dropdown {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: default;
-  }
-  
   .Nav .points {
     cursor: default;
   }
   
-  .Nav .points, .Nav .dropdown-text, .Nav .connect-wallet-text {
+  .Nav .points, .Nav .connect-wallet-text {
     color: white;
     font-family: 'Proto Mono';
     font-size: 17px;
@@ -78,6 +58,11 @@
     justify-content: center;
     cursor: pointer;
     padding: 2px 10px;
+    transition: all 0.5s ease;
+  }
+
+  .Nav .connect-wallet.extra-margin{
+    margin-top: 245px;
   }
   
   .Nav .profile-icon {
