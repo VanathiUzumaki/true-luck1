@@ -5,7 +5,7 @@ import LandingPage from './Pages/LandingPage';
 import ExpandedRoomPage from "./Pages/ExpandedRoomPage";
 import AnimatedParticles from "./Components/Particles";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Popup from "./Components/Side Popup";
+import Notification from "./Components/Notification";
 
 function App() {
  

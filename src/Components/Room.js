@@ -4,11 +4,13 @@ import CashRegisterAudio from '../Styles/Audio/cash-register-purchase.mp3';
 import '../Styles/Room.css';
 import up_arrow from '../Images/Up arrow.png'
 import down_arrow from '../Images/Down arrow.png'
+import Notification from "./Notification";
 
 
 function Room(props) {
 
     const [tickets, setTickets] = useState(0);
+    const [showNotification, setShowNotification] = useState(true);
 
     const UpButton = () => {
         setTickets(tickets+1);
@@ -22,6 +24,10 @@ function Room(props) {
     const OnBuyButtonclick = () => {
         const audio = new Audio(CashRegisterAudio);
         audio.play();
+        console.log(showNotification);
+        setShowNotification(true);
+        console.log(showNotification);
+        
       };
 
       const navigate = useNavigate();
@@ -48,6 +54,7 @@ function Room(props) {
                 <div onClick={() => { navigate("/Room"); }} className='view-text'>VIEW</div>
             </div>
         </div>
+        {setShowNotification && <Notification/>}
     </div>
   );
 }
