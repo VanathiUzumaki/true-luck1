@@ -1,0 +1,179 @@
+.signin_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    animation: open_opacity 0.5s ease-out;
+}
+
+.signin_modal .signin_modal_container {
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 14px;
+    padding: 20px;
+    width: 320px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    position: relative;
+    animation: dropdown 0.5s ease-out;
+}
+
+.signin_modal .signin_modal_header {
+    position: relative;
+}
+
+.signin_modal .profile-icon{
+    width: 90px;
+    height: 90px;
+}
+
+.signin_modal .modal_nickname {
+    margin-top: 20px;
+    display: flex;
+}
+
+
+.signin_modal .modal_nickname label {
+    display: block;
+    font-family: 'Proto Mono';
+    font-size: 25px;
+    margin-top: 9px;
+}
+
+.signin_modal .modal_nickname input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid white;
+    background : black;
+    color: white;
+    font-family: 'Proto Mono';
+}
+
+.signin_modal .modal_signup{
+    border: 2px solid;
+    background: black;
+    border-image: linear-gradient(to right, #FEBB3B, #8A00BE) 1;
+    color: white;
+    font-size: 25px;
+    width: 96%;
+    padding: 6px 0;
+    font-family: 'Proto Mono';
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.signin_modal .info{
+   
+    color: white;
+    font-size: 14px;
+    font-family: 'Proto Mono';
+    margin-top: 15px;
+}
+
+.signin_modal .trueluck-logo{
+    background:#FEBB3B;
+    width: 10%;
+    height: 2%
+}
+.orelement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.line1, .line2 {
+    width: 40%;
+    border: none;
+    border-top: 1px solid #BCBCBC; 
+    margin: 0;
+    padding: 0;
+}
+.or{
+    font-family: "Proto Mono";
+    font-size: 30px;
+    font-style: normal;
+    color: #FFF;
+}
+
+.signin_modal .close-button{
+    height: 25px;
+    width:25px;
+    padding:1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%);
+    background-size: 300%;
+    background-position: 97%;
+    font-weight: bolder;
+    transition: all 0.4s ease;
+    border: none;
+    color:white;
+    border-radius: 3px;
+    margin-left: 300px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signin_modal .close-button:hover{
+    background-position: 0;
+    color: #E34283;
+}
+
+.signin_modal_container.closing {
+    animation: slideDownAndOut 0.5s ease-out forwards;
+}
+
+.signin_modal.closing {
+    animation: close_opacity 0.5s ease-out forwards;
+}
+
+@keyframes slideDownAndOut {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes dropdown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes open_opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes close_opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

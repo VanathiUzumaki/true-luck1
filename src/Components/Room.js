@@ -24,9 +24,9 @@ function Room(props) {
     const OnBuyButtonclick = () => {
         const audio = new Audio(CashRegisterAudio);
         audio.play();
-        console.log(showNotification);
-        setShowNotification(true);
-        console.log(showNotification);
+        // console.log(showNotification);
+        // setShowNotification(true);
+        // console.log(showNotification);
         
       };
 
@@ -54,7 +54,7 @@ function Room(props) {
                 <div onClick={() => { navigate("/Room"); }} className='view-text'>VIEW</div>
             </div>
         </div>
-        {setShowNotification && <Notification/>}
+        {/* {setShowNotification && <Notification/>} */}
     </div>
   );
 }

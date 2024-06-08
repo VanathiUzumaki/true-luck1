@@ -13,7 +13,6 @@
 }
 
 .modal_container {
-    /* background: #121212; */
     border-radius: 14px;
     padding: 20px;
     width: 320px;
@@ -24,12 +23,8 @@
 }
 
 .modal_top {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     margin-bottom: 35px;
     border-bottom: 1px solid white; 
-    /* width: 50%;  */
     display: inline-block; 
 }
 
@@ -90,12 +85,9 @@
 
 .connect_button {
     background: none;
-    /* border: 1px solid white; */
     color: white;
     padding: 5px 10px;
     font-family: 'Proto Mono';
-    /* cursor: pointer; */
-    /* border-radius: 5px; */
 }
 
 .modal_verifywallet,

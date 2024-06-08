@@ -3,7 +3,7 @@ import '../Styles/Side Popup.css';
 import x from '../Images/X logo.png';
 import discord from '../Images/Discord logo.png';
 
-function Side_Popup() {
+function Side_Popup({ onClose }) {
     return (
         <div className="modal">
             <div className="modal_container">
