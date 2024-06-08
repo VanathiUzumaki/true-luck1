@@ -1,15 +1,7 @@
 import '../Styles/Analytics.css';
 import React, { useState } from 'react';
-import Dropdown from './Dropdown';
 
 function Analytics(){
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleMenuClick = () => {
-      setIsOpen(!isOpen);
-    };
-
     return(
         <div className="Analytics">
             <div className="RaffleStats">RAFFLES STATISTICS</div>
