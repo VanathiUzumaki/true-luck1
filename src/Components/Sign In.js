@@ -15,16 +15,17 @@ function Sign_In({ onClose }) {
         }, 500);
     };
 
-    const signUpCall= () => {
-       console.log("asdfsdr");
-    };
+    // const signUpCall= () => {
+    //     setSignUP(true);
+    //    console.log("asdfsdr");
+    // };
     
-    // const signUpCall =() =>{
-    //     setIsClosing(true);
-    //     setTimeout(() => {
-    //         onClose();
-    //     }, 500);
-    // }
+    const signUpCall =() =>{
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500);
+    }
     return (
         <div className={`signin_modal ${isClosing ? 'closing' : ''}`}>
             <div className={`signin_modal_container ${isClosing ? 'closing' : ''}`}>
