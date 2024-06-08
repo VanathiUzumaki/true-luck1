@@ -19,6 +19,13 @@ function Sign_In({ onClose }) {
         setShowSignUp(true);
         setIsClosing(true); 
     };
+    const handleSignUpClose = () => {
+        setShowSignUp(false);
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500);
+    };
 
     return (
         <div>
@@ -43,7 +50,7 @@ function Sign_In({ onClose }) {
                     </div>
                 </div>
             )}
-            {showSignUp && <SidePopup onClose={() => setShowSignUp(false)} />}
+            {showSignUp && <SidePopup onClose={handleSignUpClose} />}
         </div>
     );
 }
