@@ -6,17 +6,19 @@ import profileicon from '../Images/profile-icon.png';
 
 
 
-function Profile_Dropdown() {
+function Profile_Dropdown({onProfileClick}) {
+
     const navigate = useNavigate();
+
   return (
-    <div className="Profile-Dropdown">
-        <img src={profileicon} alt='profile-icon' className='profile-icon' onClick={() => { navigate("/ProfileDashboard"); }} />
+    <div className="Profile-Dropdown" onClick={onProfileClick}>
+        <img src={profileicon} alt='profile-icon' className='profile-icon'  />
         <div class="menu-dropdown-wrapper">
             <div className="menu-dropdown">
                 <div className='option'> <span>Rooms Live:5</span></div>
                 <div className='option'> <span>Rooms Ended:4</span></div>
                 <div className='option'> <span>Rooms Won:1</span></div>
-                <div className='option'>
+                <div className='option' onClick={() => { navigate("/ProfileDashboard"); }}>
                   <span>Dashboard </span>
                   <svg className='dashboard-svg' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="25" height="25" fill="none" viewBox="0 0 25 25" > <mask id="mask0_1_1838" style={{ maskType: "alpha" }} width="25" height="26" x="0" y="0" maskUnits="userSpaceOnUse" > <path fill="url(#pattern0_1_1838)" d="M0 0H25V25H0z"></path> </mask> <g mask="url(#mask0_1_1838)"> <path fill="url(#paint0_linear_1_1838)" d="M1.5 4.75H23V20.5H1.5z" ></path> </g> <defs> <pattern id="pattern0_1_1838" width="1" height="1" patternContentUnits="objectBoundingBox" > <use transform="scale(.01)" xlinkHref="#image0_1_1838"></use> </pattern> <linearGradient id="paint0_linear_1_1838" x1="23" x2="1.739" y1="11.625" y2="9.372" gradientUnits="userSpaceOnUse" > <stop stopColor="#8A00BE"></stop> <stop offset="1" stopColor="#FEBB3B"></stop> </linearGradient> <image id="image0_1_1838" width="100" height="100" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVR4nO3cvWoUURiA4SUgBJtYRYiFRWy1j6UBMQG7pDOd92Cb0tZS7LwAvQFtYmehtVVCEvJnFVAslLxhyC4sMvnZnTnnfMO8T7nF7jm8zOzut7MzGEiSJEmSJEmSJEmSJEkaAp4Dh8ABsDF6XIVwEWLcO2DWIOWC1PkOPDBKnCCVU2DdKHGCVM6AN8Atw8QIMvIVuG+UOEEqP4GnRokTZHQKew3MGCZGkJHPwF2jxAlS2QMeGyVOkMpf4JVRWkQ7PgJ32lxXb9GeH8Cj0vvpPNr1B3hZek+dRhrvgdul99ZJpOOAMliQigPKYEHKDSiB1eGXJdX7AtzLGcQY1zsGlnMFUaQB5Q0Xo1wDyrEXUoQB5QSLUI4B5X8votIDyikWoJQDypon13R+AysGiWXHILFsGySOX8Azg8R5U3/om3oMH4C5VmL4KasRvxgGsgsstXZUeIQ08gmYH6TSbG298g/YzDF+9weq6x0BT5KGGAuyMjwnqt4WsJAlRpeRnv/CmkSGy4DWJlpQ35HON2Cx9P46hzS8lHRaLYfwYuumQg4G+4yIg8E+oxn/0hYoyG6ywWCfEXEw2GdEHAz2GTd34q014gTZcjCYCVdzMJgbl3MwWAL1HAwGugnmW2+CWf42sTvAPvCi5FokSZIkSZIkSZIkSZKkQVLnOXg9OT5CUCAAAAAASUVORK5CYII=" ></image> </defs> </svg>
                 </div>
@@ -26,6 +28,7 @@ function Profile_Dropdown() {
                 </div>
             </div>
         </div>
+
     </div>
   );
 }

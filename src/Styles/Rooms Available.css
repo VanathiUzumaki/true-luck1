@@ -40,6 +40,7 @@
 }
 .react-multiple-carousel__arrow{
   background : transparent;
+  z-index: 10;
 }
 
 .react-multiple-carousel__arrow--right {

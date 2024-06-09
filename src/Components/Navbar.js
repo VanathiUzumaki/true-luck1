@@ -8,6 +8,7 @@ import Dropdown from './Dropdown';
 import Profile_Dropdown from './Profile Dropdown.js';
 import { useNavigate } from "react-router-dom";
 import Connect_wallet from '../Components/Connect Wallet.js';
+import SignIn from '../Components/Sign In';
 
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,6 +50,12 @@ const handleItemClick = (item) => {
     }
   };
 
+  const [signIn,setSignIn] = useState(false);
+
+  const handleClick = () => {
+    console.log("handle click")
+    setSignIn(true);
+  }
   return (
     <div className='Nav'>
       <div className='logo' onClick={() => { navigate("/Home"); }}>
@@ -60,7 +67,7 @@ const handleItemClick = (item) => {
         <button className='connect-wallet' onClick={() => setConectWallet(true)}>
           <p className='connect-wallet-text'>CONNECT WALLET</p>
         </button>
-        <Profile_Dropdown/>
+        <Profile_Dropdown onProfileClick={handleClick}/>
       </div>
       <div className='hamburger'>
         <label class="hamburger-menu">
@@ -80,6 +87,7 @@ const handleItemClick = (item) => {
         </div>
       )}
         {connectWallet && <Connect_wallet onClose={() => setConectWallet(false)} />}
+        {signIn && <SignIn onClose={() => setSignIn(false)} />}
     </div>
   );
 }
