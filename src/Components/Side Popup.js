@@ -6,7 +6,7 @@ import discord from '../Images/Discord logo.png';
 function Side_Popup({ onClose }) {
     
     return (
-        <div className="modal">
+        <div className="sign-up-modal">
             <div className="modal_container">
                 <div className="modal_top">
                     <span className="modal_code">TYIUDXFLC 78FKJHUH</span>

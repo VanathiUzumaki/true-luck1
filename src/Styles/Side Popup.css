@@ -1,4 +1,4 @@
-.modal {
+.sign-up-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     animation: open_opacity 0.5s ease-out;
 }
 
-.modal_container {
+.sign-up-modal .modal_container {
     border-radius: 14px;
     padding: 20px;
     width: 320px;
@@ -25,26 +25,27 @@
     animation: dropdown 0.5s ease-out;
 }
 
-.modal_container.closing {
+.sign-up-modal .modal_container.closing {
     animation: slideDownAndOut 0.5s ease-out forwards;
 }
 
-.modal.closing {
+.sign-up-modal .modal.closing {
     animation: close_opacity 0.5s ease-out forwards;
 }
 
-.modal_top {
+.sign-up-modal .modal_top {
     margin-bottom: 35px;
     border-bottom: 1px solid white;
     display: inline-block; 
     position: relative
 }
-.modal_code {
+
+.sign-up-modal .modal_code {
     font-family: 'Proto Mono';
     font-size: 16px;
 }
 
-.modal_close {
+.sign-up-modal .modal_close {
     position: absolute;
     bottom: 3px;
     left: 237px;
@@ -64,24 +65,24 @@
 
 }
 
-.modal_close:hover {
+.sign-up-modal .modal_close:hover {
     background-position: 0;
     color: #E34283;
 }
 
-.modal_nickname {
+.sign-up-modal .modal_nickname {
     margin-bottom: 20px;
     display: flex;
 }
 
-.modal_nickname label {
+.sign-up-modal .modal_nickname label {
     display: block;
     font-family: 'Proto Mono';
     font-size: 20px;
     margin-top: 9px;
 }
 
-.modal_nickname input {
+.sign-up-modal .modal_nickname input {
     width: 70%;
     padding: 8px;
     /* border-radius: 5px; */
@@ -92,34 +93,34 @@
     font-family: 'Proto Mono';
 }
 
-.modal_logos {
+.sign-up-modal .modal_logos {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.logo_container {
+.sign-up-modal .logo_container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.x_logo,
-.discord_logo {
+.sign-up-modal .x_logo,
+.sign-up-modal .discord_logo {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
 }
 
-.connect_button {
+.sign-up-modal .connect_button {
     background: none;
     color: white;
     padding: 5px 10px;
     font-family: 'Proto Mono';
 }
 
-.modal_verifywallet,
-.modal_signup {
+.sign-up-modal .modal_verifywallet,
+.sign-up-modal .modal_signup {
 
     padding: 6px 0;
     font-family: 'Proto Mono';
@@ -127,7 +128,7 @@
     margin-bottom: 10px;
 }
 
-.modal_verifywallet {
+.sign-up-modal .modal_verifywallet {
     border: 2px solid white;
     background: black;
     color: white;
@@ -137,7 +138,7 @@
 
 }
 
-.modal_signup {
+.sign-up-modal .modal_signup {
     border: 2px solid;
     background: black;
     border-image: linear-gradient(to right, #FEBB3B, #8A00BE) 1;
@@ -146,9 +147,9 @@
     width: 55%;
 }
 
-.modal_signup:hover,
-.modal_verifywallet:hover,
-.connect_button:hover {
+.sign-up-modal .modal_signup:hover,
+.sign-up-modal .modal_verifywallet:hover,
+.sign-up-modal .connect_button:hover {
     background: #1e1e1e;
 }
 
