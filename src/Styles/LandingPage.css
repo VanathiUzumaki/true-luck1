@@ -62,11 +62,12 @@
 .landing-container .logo-bottom {
     width: 100%;
     height: 78px;
-    /* margin-top: 4vh; */
+    margin-top: -10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:1vh;
 }
 
 .landing-container .stats {
@@ -167,9 +168,6 @@
         display: none;
     }
 
-    .landing-container .logo{
-        justify-content: center;
-    }
     .landing-container .logo-circle {
         width: 95vw;
     }
@@ -260,10 +258,14 @@
     .landing-container .logo {
         justify-content: center;
   }
+  .landing-container .logo-bottom{
+    margin-top:0px;
+}
 }
 
   @media (min-aspect-ratio: 1/1) {
     .landing-container .logo-circle {
-      width: 85vh;
+      width: 75vh;
     }
+
   }
