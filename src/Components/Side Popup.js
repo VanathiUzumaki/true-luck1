@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styles/Side Popup.css';
 import x from '../Images/X logo.png';
 import discord from '../Images/Discord logo.png';
 
 function Side_Popup({ onClose }) {
+
+    const [isClosing, setIsClosing] = useState(false);
+
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500);
+    };
+    
     return (
-        <div className="modal">
-            <div className="modal_container">
+        <div className={`modal ${isClosing ? 'closing' : ''}`}>
+            <div className={`modal_container ${isClosing ? 'closing' : ''}`}>
                 <div className="modal_top">
                     <span className="modal_code">TYIUDXFLC 78FKJHUH</span>
-                    <button className="modal_close" onClick={onClose}>X</button>
+                    <button className="modal_close" onClick={handleClose}>X</button>
                 </div>
                 <div className="modal_nickname">
                     <label htmlFor="nickname">Nickname:</label>
