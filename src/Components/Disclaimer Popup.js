@@ -27,7 +27,7 @@ function Disclaimer_Popup({ onClose }) {
                     This is sample content. This is sample content.This is sample content.This is sample content.This is sample content.
                 </div>
                 <div className='disclaimer_modal_footer'>
-                    <button className='yes-button' onClick={handleClose} >YES !! I AM In</button>
+                    <button className='yes-button' onClick={handleClose} >YES !!</button>
                     <button className='no-button' onClick={() => { navigate("/"); }}>NAH AH -_-</button>
                 </div>
             </div>
