@@ -87,8 +87,8 @@
 
 .disclaimer_modal .yes-button,
 .disclaimer_modal .no-button {
-    width: 200px;
-    height: 65px;
+    padding: 20px 30px;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     border-width: 2px;
@@ -111,7 +111,6 @@
 .disclaimer_modal .no-button:hover {
     background-position: 0;
     color: #E34283;
-    padding-left: 12px;
     transition: all 0.3s ease;
 }
 
