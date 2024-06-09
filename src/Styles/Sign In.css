@@ -72,12 +72,17 @@
     font-family: 'Proto Mono';
     cursor: pointer;
     margin-top: 25px;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .signin_modal .circle-text{
-    width: auto;
-    height: auto; 
+    position: absolute;
+    right:5px;
+    top:0px;
+    width:105px;
+    height: auto;
 
 }
 .signin_modal .info{
@@ -143,13 +148,6 @@
     animation: close_opacity 0.5s ease-out forwards;
 }
 
-.signin_modal .circle-text{
-    width: auto; 
-    height: auto; 
-    max-width: 90px;
-    max-height: 90px; 
-    margin-left: 10px; 
-}
 
 @keyframes slideDownAndOut {
     from {
