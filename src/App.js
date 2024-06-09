@@ -9,12 +9,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  const [disclaimerPopup,setDisclaimerPopup] = useState(false);
-
-  const showDisclaimer = () =>{
-    setDisclaimerPopup(true);
-  }
-
+  const [disclaimerPopup,setDisclaimerPopup] = useState(true);
+  
   const hideDisclaimer = () =>{
     setDisclaimerPopup(false);
   }
@@ -26,7 +22,7 @@ function App() {
       </div>
        <Router basename="/true-luck">
         <Routes>
-          <Route path="/" element={<LandingPage showDisclaimer={showDisclaimer} />} />
+          <Route path="/" element={<LandingPage/>} />
           <Route path="/Home" element={<Home disclaimerPopup={disclaimerPopup} hideDisclaimer={hideDisclaimer} />} />
           <Route path="/ProfileDashboard" element={<ProfileDashboard />} />
           <Route path="/Room" element={<ExpandedRoomPage />} />
