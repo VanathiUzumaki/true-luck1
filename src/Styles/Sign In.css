@@ -29,10 +29,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3); 
     position: relative;
     animation: dropdown 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .signin_modal .signin_modal_header {
-    position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -45,8 +47,10 @@
 }
 
 .signin_modal .modal_nickname {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -54,16 +58,16 @@
     display: block;
     font-family: 'Proto Mono';
     font-size: 25px;
-    margin-top: 9px;
 }
 
 .signin_modal .modal_nickname input {
     width: 70%;
-    padding: 8px;
+    padding: 0px 5px;
     border: 1px solid white;
     background : black;
     color: white;
     font-family: 'Proto Mono';
+    font-size: 23px;
 }
 
 .signin_modal .modal_signup{
@@ -98,21 +102,22 @@
     margin-top: 15px;
 }
 
-.orelement{
+.signin_modal .orelement{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+    width: 100%;
 }
 
-.line1, .line2 {
+.signin_modal .line1, .signin_modal .line2 {
     width: 40%;
     border: none;
     border-top: 1px solid #BCBCBC; 
     margin: 0;
     padding: 0;
 }
-.or{
+.signin_modal .or{
     font-family: "Proto Mono";
     font-size: 30px;
     font-style: normal;
@@ -124,8 +129,8 @@
     width:25px;
     padding:1px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     background-color: transparent;
     background-image: linear-gradient(45deg, white 50%, transparent 50%);
     background-size: 300%;
