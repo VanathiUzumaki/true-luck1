@@ -32,12 +32,12 @@ function Connect_Wallet({ onClose }) {
                     <img className='arrow' src={arrow} alt='arrow' />
                 </div>
                 <div className='metamask'>
-                    <img className='icon' src={phantom} alt='phantom' />
+                    <img className='icon-phantom' src={phantom} alt='phantom' />
                     <div className='text'>PHANTOM</div>
                     <img className='arrow' src={arrow} alt='arrow' />
                 </div>
                 <div className='metamask'>
-                    <img className='icon' src={connect} alt='connect' />
+                    <img className='icon-connect-wallet' src={connect} alt='connect' />
                     <div className='text'>WALLET CONNECT</div>
                     <img className='arrow' src={arrow} alt='arrow' />
                 </div>

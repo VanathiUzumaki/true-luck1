@@ -24,8 +24,10 @@ function Rooms_Available(props) {
       items: 1
     }
   };
+  
 
   const [showNotification, setShowNotification] = useState(false);
+  const [notificationText, setNotificationText] = useState('');
   const handleNotification = () => {
     setShowNotification(true)
     setTimeout(() => {
@@ -33,7 +35,10 @@ function Rooms_Available(props) {
   }, 4000);
 
   }
-
+  const handleCallback = (childData) => {
+    console.log("this is childData" + childData);
+    setNotificationText(childData);
+  };
 
   return (
     <div className='rooms-available'>
@@ -41,16 +46,16 @@ function Rooms_Available(props) {
       <Carousel
       infinite={true}
       responsive={responsive} className='carousel'>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
         <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
         <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
+        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
       </Carousel>
-      {showNotification && <Notification/>}
+      {showNotification && <Notification  text={notificationText}/>}
     </div>
 
   );

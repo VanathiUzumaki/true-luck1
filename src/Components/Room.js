@@ -7,7 +7,6 @@ import down_arrow from '../Images/Down arrow.png'
 
 
 function Room(props) {
-
     const [tickets, setTickets] = useState(0);
 
     const UpButton = () => {
@@ -22,7 +21,12 @@ function Room(props) {
     const onBuyButtonclick = () => {
         const audio = new Audio(CashRegisterAudio);
         audio.play(); 
-        props.onBuyClick();     
+        props.onBuyClick();    
+        // if (props.parentCallback) {
+        //   props.parentCallback("Buy was a Success :)");
+        // } else {
+        //   console.error("parentCallback is not a function");
+        // }
       };
 
       const navigate = useNavigate();

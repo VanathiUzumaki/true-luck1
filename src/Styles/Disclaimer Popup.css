@@ -1,0 +1,28 @@
+.disclaimer_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    animation: open_opacity 0.5s ease-out;
+}
+
+
+.disclaimer_modal_container {
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 14px;
+    padding: 20px;
+    width: 320px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    position: relative;
+    animation: dropdown 0.5s ease-out;
+}

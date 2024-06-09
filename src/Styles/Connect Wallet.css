@@ -97,6 +97,18 @@
     
 }
 
+.connect_modal .icon-phantom{
+    width: 50px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.connect_modal .icon-connect-wallet{
+    width: 70px;
+    height: 40px;
+    margin-left: -4px;
+}
+
 .connect_modal .text {
     flex: 1;
     color: #FFF;
