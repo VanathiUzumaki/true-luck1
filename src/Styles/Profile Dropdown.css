@@ -32,7 +32,7 @@
     margin-top:20px;
   }
   .Profile-Dropdown .menu-dropdown-wrapper{
-    z-index: 100;   
+    z-index: 1001;   
     position: absolute;
     top:30px;
     right: 0px;
@@ -49,11 +49,25 @@
     opacity: 1;
   }
 
-
-  .Profile-Dropdown .option{
-    margin-top: 10px;
+  .Profile-Dropdown .menu-dropdown span{
+    transition: all 0.3s ease;
+  }
+  .Profile-Dropdown .menu-dropdown span:hover{
+    padding-left: 15px;
+    color: #E34283;
   }
 
-  .Profile-Dropdown .menu-dropdown .option:last-child{
-    margin-bottom:10px
+
+  .Profile-Dropdown .option{
+    padding: 10px 0px 10px 15px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    align-items: center;
+  }
+  .Profile-Dropdown .dashboard-svg{
+    padding-left: 10px
+  }
+
+ .Profile-Dropdown .menu-dropdown .option:last-child{
+  border: none;
   }
