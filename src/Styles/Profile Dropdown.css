@@ -21,7 +21,7 @@
     background: black;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 2px solid grey;
+    border: 2px solid #535353;
     border-radius: 15px;
     display: block;
     cursor: pointer;
@@ -60,7 +60,7 @@
 
   .Profile-Dropdown .option{
     padding: 10px 0px 10px 15px;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #535353;
     display: flex;
     align-items: center;
   }

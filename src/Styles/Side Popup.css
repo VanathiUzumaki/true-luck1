@@ -20,7 +20,7 @@
     color: white;
     text-align: center;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
+    border: 1px solid #535353;
     background-color: black;
     animation: dropdown 0.5s ease-out;
 }
@@ -73,24 +73,22 @@
 .sign-up-modal .modal_nickname {
     margin-bottom: 20px;
     display: flex;
+    align-items: center;
 }
 
 .sign-up-modal .modal_nickname label {
     display: block;
     font-family: 'Proto Mono';
-    font-size: 20px;
-    margin-top: 9px;
+    font-size: 22px;
 }
 
 .sign-up-modal .modal_nickname input {
     width: 70%;
-    padding: 8px;
-    /* border-radius: 5px; */
     border: 1px solid white;
-    /* background: #1e1e1e; */
     background: black;
     color: white;
     font-family: 'Proto Mono';
+    font-size: 20px;
 }
 
 .sign-up-modal .modal_logos {
