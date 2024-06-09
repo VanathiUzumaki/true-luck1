@@ -48,7 +48,7 @@ const Rooms_Entered = (props) => {
               <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
               <div className='room-container'><Room {...props} onBuyClick={handleNotification}/></div>
             </div>
-            {showNotification && <Notification/>}
+            {showNotification && <Notification text="A new room has been bought"/>}
         </div>
     );
 }
