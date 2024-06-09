@@ -28,7 +28,7 @@ function Sign_In({ onClose }) {
     };
 
     return (
-        <div>
+        <div className='sign-in-container'>
             {!showSignUp && (
                 <div className={`signin_modal ${isClosing ? 'closing' : ''}`}>
                     <div className={`signin_modal_container ${isClosing ? 'closing' : ''}`}>
