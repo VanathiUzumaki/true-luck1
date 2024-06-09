@@ -50,7 +50,7 @@ function Rooms_Available(props) {
         <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
         <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
       </Carousel>
-      {showNotification && <Notification/>}
+      {showNotification && <Notification text="A new room has been bought"/>}
     </div>
 
   );

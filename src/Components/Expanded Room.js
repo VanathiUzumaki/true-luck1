@@ -4,10 +4,12 @@ import expanded_room_bg from '../Images/Expanded-room-bg.png'
 import up_arrow from '../Images/Up arrow.png'
 import down_arrow from '../Images/Down arrow.png'
 import CashRegisterAudio from '../Styles/Audio/cash-register-purchase.mp3';
+import Notification from "./Notification";
 
 function Expanded_Room(props){
 
     const [tickets, setTickets] = useState(0);
+    const [showNotification, setShowNotification] = useState(false);
 
     const UpButton = () => {
         setTickets(tickets+1);
@@ -21,6 +23,10 @@ function Expanded_Room(props){
     const OnBuyButtonclick = () => {
         const audio = new Audio(CashRegisterAudio);
         audio.play();
+        setShowNotification(true)
+        setTimeout(() => {
+            setShowNotification(false);
+        }, 4000);
       };
 
     return (
@@ -57,6 +63,7 @@ function Expanded_Room(props){
                     </button>
                 </div>
             </div>
+            {showNotification && <Notification text="A new room has been bought"/>}
         </div>
     )
 }

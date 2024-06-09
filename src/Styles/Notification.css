@@ -12,7 +12,19 @@
     z-index: 10000;
 }
 
+.Notification-modal .notification-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-family: "Proto Mono";
+}
+
+
 .Notification-modal .time-elapse {
+    position: absolute;
+    bottom:0px;
     width: 100%;
     height: 5px;
     background: linear-gradient(to right, #FEBB3B, #8A00BE);
