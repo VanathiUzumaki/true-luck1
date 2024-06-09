@@ -32,11 +32,11 @@
     justify-content: space-between;
 }
 
-.disclaimer_modal_container .closing {
+.disclaimer_modal_container.closing {
     animation: slideDownAndOut 0.5s ease-out forwards;
 }
 
-.disclaimer_modal .closing {
+.disclaimer_modal.closing {
     animation: close_opacity 0.5s ease-out forwards;
 }
 
