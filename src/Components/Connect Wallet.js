@@ -25,31 +25,40 @@ function Connect_Wallet({ onClose }) {
              </div>
              <button  className="close-button" onClick={handleClose}>X</button>
                 </div>
-            
-                <div className='metamask'>
-                    <img className='icon' src={metamask} alt='metamask' />
-                    <div className='text'>METAMASK</div>
-                    <img className='arrow' src={arrow} alt='arrow' />
+                <div className='wallet-option'>
+                    <div className='metamask'>
+                        <img className='icon' src={metamask} alt='metamask' />
+                        <div className='text'>METAMASK</div>
+                        <img className='arrow' src={arrow} alt='arrow' />
+                    </div>
                 </div>
-                <div className='metamask'>
-                    <img className='icon-phantom' src={phantom} alt='phantom' />
-                    <div className='text'>PHANTOM</div>
-                    <img className='arrow' src={arrow} alt='arrow' />
+                <div className='wallet-option'>
+                    <div className='metamask'>
+                        <img className='icon-phantom' src={phantom} alt='phantom' />
+                        <div className='text'>PHANTOM</div>
+                        <img className='arrow' src={arrow} alt='arrow' />
+                    </div>
                 </div>
-                <div className='metamask'>
-                    <img className='icon-connect-wallet' src={connect} alt='connect' />
-                    <div className='text'>WALLET CONNECT</div>
-                    <img className='arrow' src={arrow} alt='arrow' />
+                <div className='wallet-option'>
+                    <div className='metamask'>
+                        <img className='icon-connect-wallet' src={connect} alt='connect' />
+                        <div className='text'>WALLET CONNECT</div>
+                        <img className='arrow' src={arrow} alt='arrow' />
+                    </div>
                 </div>
-                <div className='metamask'>
-                    <img className='icon' src={coinbase} alt='coinbase' />
-                    <div className='text'>COINBASE WALLET</div>
-                    <img className='arrow' src={arrow} alt='arrow' />
+                <div className='wallet-option'>
+                    <div className='metamask'>
+                        <img className='icon' src={coinbase} alt='coinbase' />
+                        <div className='text'>COINBASE WALLET</div>
+                        <img className='arrow' src={arrow} alt='arrow' />
+                    </div>
                 </div>
-                <div className='metamask'>
-                    <img className='icon' src={trust} alt='trust' />
-                    <div className='text'>TRUST</div>
-                    <img className='arrow' src={arrow} alt='arrow' />
+                <div className='wallet-option'>
+                    <div className='metamask'>
+                        <img className='icon' src={trust} alt='trust' />
+                        <div className='text'>TRUST</div>
+                        <img className='arrow' src={arrow} alt='arrow' />
+                    </div>
                 </div>
             </div>
         </div>
