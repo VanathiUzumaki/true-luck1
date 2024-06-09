@@ -28,11 +28,15 @@
 
 .signin_modal .signin_modal_header {
     position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .signin_modal .profile-icon{
     width: 90px;
     height: 90px;
+    margin-right: -12px;
 }
 
 .signin_modal .modal_nickname {
@@ -62,14 +66,20 @@
     background: black;
     border-image: linear-gradient(to right, #FEBB3B, #8A00BE) 1;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     width: 96%;
-    padding: 6px 0;
+    padding: 6px 10px;
     font-family: 'Proto Mono';
     cursor: pointer;
     margin-top: 25px;
+    display: inline-flex;
 }
 
+.signin_modal .circle-text{
+    width: auto;
+    height: auto; 
+
+}
 .signin_modal .info{
    
     color: white;
@@ -78,11 +88,6 @@
     margin-top: 15px;
 }
 
-.signin_modal .trueluck-logo{
-    background:#FEBB3B;
-    width: 10%;
-    height: 2%
-}
 .orelement{
     display: flex;
     justify-content: space-between;
@@ -139,8 +144,11 @@
 }
 
 .signin_modal .circle-text{
-    width:90px;
-    height:auto;
+    width: auto; 
+    height: auto; 
+    max-width: 90px;
+    max-height: 90px; 
+    margin-left: 10px; 
 }
 
 @keyframes slideDownAndOut {
