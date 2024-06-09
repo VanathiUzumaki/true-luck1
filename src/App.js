@@ -6,6 +6,7 @@ import ExpandedRoomPage from "./Pages/ExpandedRoomPage";
 import AnimatedParticles from "./Components/Particles";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
 function App() {
  
   return (
