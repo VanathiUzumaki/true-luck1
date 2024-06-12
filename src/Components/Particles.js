@@ -16,11 +16,11 @@ const AnimatedParticles = () => {
     mount.appendChild(renderer.domElement);
 
     // Create particles
-    const particleCount = 65;  // Increased number of particles
+    const particleCount = 65; // Keeping the same number of particles
     const particles = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
-    const speeds = new Float32Array(particleCount * 3);
+    const speeds = new Float32Array(particleCount);
 
     const colorPalette = [
       new THREE.Color(0xff7f50), // Coral
@@ -30,18 +30,19 @@ const AnimatedParticles = () => {
       new THREE.Color(0xff69b4)  // HotPink
     ];
 
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
     function initializeParticle(index) {
-      const radius = 300;  // Initial distance from the center
-      const angle = Math.random() * Math.PI * 2;
-      const y = (Math.random() - 0.5) * 100;
+      const x = (Math.random() - 0.5) * width;
+      const y = (Math.random() - 0.5) * height;
+      const z = (Math.random() - 0.5) * 600; // Depth distribution
 
-      positions[index] = Math.cos(angle) * radius;
+      positions[index] = x;
       positions[index + 1] = y;
-      positions[index + 2] = Math.sin(angle) * radius;
+      positions[index + 2] = z;
 
-      speeds[index] = (Math.random() - 0.5) * 2;  // Random speed for more natural movement
-      speeds[index + 1] = (Math.random() - 0.5) * 2;
-      speeds[index + 2] = (Math.random() - 0.5) * 2;
+      speeds[index / 3] = 0.5 + Math.random() * 0.5;  // Random speed for each particle
 
       const color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
       colors[index] = color.r;
@@ -57,7 +58,7 @@ const AnimatedParticles = () => {
     particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
     const particleMaterial = new THREE.PointsMaterial({
-      size: 3.0,  // Increased size for more visibility
+      size: 3.0,  // Keeping the same size for visibility
       vertexColors: true,
       map: new THREE.TextureLoader().load('https://threejs.org/examples/textures/sprites/circle.png'), // Circle texture
       transparent: true,
@@ -76,17 +77,23 @@ const AnimatedParticles = () => {
       requestAnimationFrame(animate);
 
       for (let i = 0; i < particleCount * 3; i += 3) {
-        positions[i] += speeds[i];
-        positions[i + 1] += speeds[i + 1];
-        positions[i + 2] += speeds[i + 2];
+        const speed = speeds[i / 3];
+        const direction = new THREE.Vector3(positions[i], positions[i + 1], positions[i + 2]).normalize();
 
-        // Wrap particles around the screen edges
-        if (positions[i] > 300) positions[i] = -300;
-        if (positions[i] < -300) positions[i] = 300;
-        if (positions[i + 1] > 150) positions[i + 1] = -150;
-        if (positions[i + 1] < -150) positions[i + 1] = 150;
-        if (positions[i + 2] > 300) positions[i + 2] = -300;
-        if (positions[i + 2] < -300) positions[i + 2] = 300;
+        positions[i] -= direction.x * speed;
+        positions[i + 1] -= direction.y * speed;
+        positions[i + 2] -= direction.z * speed;
+
+        // Reset particle if it reaches the center
+        const distanceFromCenter = Math.sqrt(
+          positions[i] * positions[i] +
+          positions[i + 1] * positions[i + 1] +
+          positions[i + 2] * positions[i + 2]
+        );
+
+        if (distanceFromCenter < 10) {  // Reset when close to the center
+          initializeParticle(i);
+        }
       }
 
       particles.attributes.position.needsUpdate = true;
