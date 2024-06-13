@@ -7,7 +7,7 @@ import down_arrow from '../Images/Down arrow.png'
 
 
 function Room(props) {
-    const [tickets, setTickets] = useState(0);
+    const [tickets, setTickets] = useState(1);
 
     const UpButton = () => {
         setTickets(tickets+1);
