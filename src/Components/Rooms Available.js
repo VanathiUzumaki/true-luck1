@@ -42,7 +42,8 @@ function Rooms_Available(props) {
 
   return (
     <div className='rooms-available'>
-      <div className='rooms-available-text'>Rooms Available:</div>
+      <div className='rooms-available-text'>Rooms Available - 15</div>
+      {/* <div className='rooms-available-text'>Rooms Available - {props.length}:</div> */}
       <Carousel
       infinite={true}
       responsive={responsive} className='carousel'>

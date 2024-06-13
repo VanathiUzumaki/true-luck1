@@ -30,6 +30,24 @@ function Expanded_Room(props){
         }, 4000);
       };
 
+      const generateConfetti = () => {
+        const confettiColors = ['#F7A64C', '#FFD700', '#FF4500', '#ADFF2F', '#00CED1', '#FF69B4'];
+        const confettiArray = [];
+      
+        for (let i = 0; i < 50; i++) {
+          const confettiStyle = {
+            left: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 2}s`,
+            '--confetti-color': confettiColors[Math.floor(Math.random() * confettiColors.length)]
+          };
+      
+          confettiArray.push(
+            <div className="confetti" style={confettiStyle} key={i} />
+          );
+        }
+      
+        return confettiArray;
+      };
     return (
         <div className='Expanded-Room'>
             <div className='left-container'>
@@ -45,17 +63,26 @@ function Expanded_Room(props){
                     </div>
                 </div>
                 <div className='total-prizes'>Total Prizes : 3</div>
+                <div className='prize-list'>
                 <div className='first-prize'>1st : <span>$60 USDT/USDC</span></div>
                 <div className='second-prize'>2nd : <span>$60 USDT/USDC</span></div>
                 <div className='third-prize'>3rd : <span>$60 USDT/USDC</span></div>
+                <div className='first-prize'>1st : <span>$60 USDT/USDC</span></div>
+                <div className='second-prize'>2nd : <span>$60 USDT/USDC</span></div>
+                <div className='third-prize'>3rd : <span>$60 USDT/USDC</span></div>
+                
+                </div>
             </div>
             <div className='right-container'>
                 <div className='entry-fee'>Entry fee : $10 usdt/usdc</div>
+                <div  className='winner'>WINNERS</div>
                 <div className='winner-panel'>
-                    <div  className='winner'>WINNERS</div>
-                    <div  className='winner-1'>1ST :  <img src={profile}/> CRACKHEAD47</div>
-                    <div  className='winner-2'>2ND :  <img src={profile}/> CRACKHEAD47</div>
-                    <div  className='winner-3'>3RD :  <img src={profile}/> CRACKHEAD47</div>
+                    <div  className='winner-1'>1ST :  <img src={profile}/> CRACKHEAD47  </div>
+                    <div  className='winner-2'>2ND :  <img src={profile}/> CRACKHEAD47  </div>
+                    <div  className='winner-3'>3RD :  <img src={profile}/> CRACKHEAD47  </div>
+                    <div  className='winner-1'>1ST :  <img src={profile}/> CRACKHEAD47  </div>
+                    <div  className='winner-2'>2ND :  <img src={profile}/> CRACKHEAD47  </div>
+                    <div  className='winner-3'>3RD :  <img src={profile}/> CRACKHEAD47  </div>
                 </div>
                 <button className='claim-container' onClick={OnBuyButtonclick}>
                         <p className='claim-text'>CLAIM</p>
@@ -73,6 +100,7 @@ function Expanded_Room(props){
                     </button>
                 </div> */}
             </div>
+            {/* {generateConfetti()} */}
             {showNotification && <Notification text="A new room has been bought"/>}
         </div>
     )

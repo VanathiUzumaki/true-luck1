@@ -33,6 +33,7 @@
 .Expanded-Room .title {
     color: #FEBB3B;
     font-size: 45px;
+
 }
 
 .Expanded-Room .tickets-container {
@@ -84,11 +85,26 @@
     font-size: 25px;
 }
 
+.Expanded-Room .prize-list {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.Expanded-Room .prize-list:hover {
+
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #F7A64C black;
+
+}
+
+
 .Expanded-Room span {
     font-size: 35px;
     text-shadow: 0px 5px 4.04px #DE0DB0;
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #000;
+    margin-right: 10px;
 }
 
 .Expanded-Room .right-container {
@@ -159,17 +175,34 @@
     text-decoration: underline;
     font-size: 30px;
     text-shadow: 0px 4px 25px #FFF;
+    margin-right: 15px;
 }
 
 .Expanded-Room .winner-1 .winner-2 .winner-3 {
     font-size: 25px;
+    margin-left: 3px;
+    margin-right: 10px;
 
 }
+
+.Expanded-Room .winner-panel {
+    max-height: 183px;
+    overflow: hidden;
+
+}
+
+.Expanded-Room .winner-panel:hover {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #F7A64C black;
+}
+
 
 .Expanded-Room .winner-panel img {
     position: relative;
     top: 10px;
 }
+
 
 .Expanded-Room .claim-container {
     width: 170px;
@@ -193,6 +226,32 @@
     font-family: 'Proto Mono';
 
 }
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--confetti-color);
+    opacity: 0;
+    animation: confetti 3s ease-in-out infinite;
+  }
+  
+  .Expanded-Room .winner-panel:hover .confetti {
+    opacity: 1;
+  }
+
+@keyframes confetti {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+
 
 @media (max-width:700px) {
     .Expanded-Room {
