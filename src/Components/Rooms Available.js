@@ -1,9 +1,9 @@
-import Carousel from 'react-multi-carousel';
 import React, { useState } from 'react';
+import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../Styles/Rooms Available.css';
-import Room from './Room.js'
-import Notification from "./Notification";
+import Room from './Room';
+import Notification from './Notification';
 
 function Rooms_Available(props) {
   const responsive = {
@@ -24,40 +24,47 @@ function Rooms_Available(props) {
       items: 1
     }
   };
-  
 
   const [showNotification, setShowNotification] = useState(false);
   const [notificationText, setNotificationText] = useState('');
+
   const handleNotification = () => {
-    setShowNotification(true)
+    setShowNotification(true);
     setTimeout(() => {
       setShowNotification(false);
-  }, 4000);
+    }, 4000);
+  };
 
-  }
   const handleCallback = (childData) => {
-    console.log("this is childData" + childData);
+    console.log('this is childData' + childData);
     setNotificationText(childData);
   };
 
   return (
     <div className='rooms-available'>
-      <div className='rooms-available-text'>Rooms Available:</div>
-      <Carousel
-      infinite={true}
-      responsive={responsive} className='carousel'>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification}/>  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-        <div className='rooms'> <Room {...props} onBuyClick={handleNotification} />  </div>
-      </Carousel>
-      {showNotification && <Notification text="A new room has been bought"/>}
+      <div className='rooms-available-text'>Rooms Available - 15</div>
+      <div className='carousel-container'>
+        <Carousel
+          infinite={true}
+          responsive={responsive}
+          className='carousel'
+        >
+          {[...Array(8)].map((_, index) => (
+            <div className='rooms' key={index}>
+              <Room {...props} onBuyClick={handleNotification} />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <div className='rooms-container'>
+        {[...Array(8)].map((_, index) => (
+          <div className='rooms' key={index}>
+            <Room {...props} onBuyClick={handleNotification} />
+          </div>
+        ))}
+      </div>
+      {showNotification && <Notification text='A new room has been bought' />}
     </div>
-
   );
 }
 

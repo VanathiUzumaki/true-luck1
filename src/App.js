@@ -6,6 +6,7 @@ import LandingPage from './Pages/LandingPage';
 import ExpandedRoomPage from "./Pages/ExpandedRoomPage";
 import AnimatedParticles from "./Components/Particles";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Test from "./Components/test";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
  
   return (
     <div className="App">
+      {/* <Test/> */}
       <div className="particles-background">
         <AnimatedParticles />
       </div>

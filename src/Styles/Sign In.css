@@ -70,6 +70,19 @@
     font-size: 23px;
 }
 
+.signin_modal .namebutton{
+    border: 2px solid;
+    background: black;
+    border-image: linear-gradient(to right, #FEBB3B, #8A00BE) 1;
+    color: white;
+    padding: 6px 10px;
+    font-family: 'Proto Mono';
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 .signin_modal .modal_signup{
     border: 2px solid;
     background: black;
@@ -106,7 +119,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
     width: 100%;
 }
 

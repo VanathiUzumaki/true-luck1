@@ -7,6 +7,7 @@ function Sign_In({ onClose }) {
 
     const [isClosing, setIsClosing] = useState(false);
     const [showSignUp, setShowSignUp] = useState(false);
+    const [nickname, setNickname] = useState('');
 
     const handleClose = () => {
         setIsClosing(true);
@@ -14,6 +15,10 @@ function Sign_In({ onClose }) {
             onClose();
         }, 500);
     };
+
+    const handleInputChange = (event) => {
+        setNickname(event.target.value);
+      };
 
     const handleSignUpClick = () => {
         setShowSignUp(true);
@@ -27,6 +32,17 @@ function Sign_In({ onClose }) {
         }, 500);
     };
 
+    const handleEnterClose =() =>{
+        const isNicknameEntered = nickname.trim().length > 0;
+        if (isNicknameEntered) {
+            setTimeout(() => {
+                onClose();
+            }, 500);
+          } else {
+            alert('Please enter a nickname.');
+          }
+    }
+
     return (
         <div className='sign-in-container'>
             {!showSignUp && (
@@ -38,8 +54,9 @@ function Sign_In({ onClose }) {
                         </div>
                         <div className="modal_nickname">
                             <label htmlFor="nickname">NAME:</label>
-                            <input type="text" id="nickname" name="nickname" />
+                            <input type="text" id="nickname" name="nickname" value={nickname} onChange={handleInputChange}/>
                         </div>
+                        <button className='namebutton' onClick={handleEnterClose} >ENTER</button>
                         <div className='orelement'>
                             <hr className='line1'></hr>
                             <div className='or'>OR</div>

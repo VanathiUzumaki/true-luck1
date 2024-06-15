@@ -45,7 +45,7 @@ const LandingPage = () => {
                         <p className="statustext">4</p>
                         <div className="line-inbetween"></div>
                         <p className="funds-entered">{fundsText}</p>
-                        <p className="statustext">$2500</p>
+                        <p className="statustext">2500</p>
                     </div>
                 </div>
             </div>
