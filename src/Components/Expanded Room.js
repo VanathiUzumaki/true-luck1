@@ -11,6 +11,7 @@ function Expanded_Room(props){
 
     const [tickets, setTickets] = useState(0);
     const [showNotification, setShowNotification] = useState(false);
+    const [isWinner, setIsWinner] = useState(true);
 
     const UpButton = () => {
         setTickets(tickets+1);
@@ -75,6 +76,7 @@ function Expanded_Room(props){
             </div>
             <div className='right-container'>
                 <div className='entry-fee'>Entry fee : $10 usdt/usdc</div>
+                {isWinner ? (  <>
                 <div  className='winner'>WINNERS</div>
                 <div className='winner-panel'>
                     <div  className='winner-1'>1ST :  <img src={profile}/> CRACKHEAD47  </div>
@@ -87,7 +89,8 @@ function Expanded_Room(props){
                 <button className='claim-container' onClick={OnBuyButtonclick}>
                         <p className='claim-text'>CLAIM</p>
                     </button>
-                {/* <div className='participants'>Participants : 6</div>
+                    </>) : (  <>
+                <div className='participants'>Participants : 6</div>
                 <div className='tickets-remaining'>Ticket remaining : 2</div>
                 <div className='buying-section'>
                     <div className='counter'>
@@ -98,7 +101,9 @@ function Expanded_Room(props){
                     <button className='buy-container' onClick={OnBuyButtonclick}>
                         <p className='buy-text'>BUY</p>
                     </button>
-                </div> */}
+                </div>
+                </>)}
+                  
             </div>
             {/* {generateConfetti()} */}
             {showNotification && <Notification text="A new room has been bought"/>}
