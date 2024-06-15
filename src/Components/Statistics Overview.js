@@ -51,6 +51,9 @@ function Statistics_Overview(props) {
                 {props.Users.map((user, index) => (
                     <User key={index} {...user} />
                 ))}
+  <div className='pagination'>
+            </div>
+          
 
             </div>
         </div>
