@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function Statistics_Overview(props) {
     const [currentPage, setCurrentPage] = useState(1);
-    const usersPerPage = 4; 
+    const [usersPerPage, setUsersPerPage] = useState(10);
 
     const indexOfLastUser = currentPage * usersPerPage;
     const indexOfFirstUser = indexOfLastUser - usersPerPage;
@@ -20,6 +20,11 @@ function Statistics_Overview(props) {
 
     const handleNextPage = () => {
         if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+    };
+
+    const handleUsersPerPageChange = (event) => {
+        setUsersPerPage(Number(event.target.value));
+        setCurrentPage(1);
     };
 
     return (
@@ -70,9 +75,20 @@ function Statistics_Overview(props) {
                     <User key={index} {...user} />
                 ))}
                 <div className='pagination'>
+                    <select 
+                        className="pagination-dropdown" 
+                        name="pagination-dropdown"
+                        value={usersPerPage}
+                        onChange={handleUsersPerPageChange}
+                    >
+                        <option value="10">10</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                    </select>
                     <button onClick={handlePreviousPage} disabled={currentPage === 1}>Previous</button>
-                    {/* <span>Page {currentPage} of {totalPages}</span> */}
                     <button onClick={handleNextPage} disabled={currentPage === totalPages}>Next</button>
+                    {/* { <span>{currentPage} of {totalPages}</span> } */}
+                    
                 </div>
             </div>
         </div>
