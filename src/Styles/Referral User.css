@@ -4,42 +4,64 @@
     margin: 0px 45px;
 }
 
-.Referral-User .profile-pic{
-    width:30px;
+.Referral-User .profile-pic {
+    width: 30px;
 }
 
-.Referral-User p{
+.Referral-User p {
     color: #bcbcbc;
 }
-.Referral-User .users{
+
+.Referral-User .users {
     display: flex;
     align-items: center;
 }
 
-.Referral-User .users p{
+.Referral-User .users p {
     margin-left: 5px;
 }
 
-.Referral-User .time{
-    margin-left: 500px;
+.Referral-User .time {
+    margin-left: 196px;
     display: flex;
     align-items: center;
 }
 
-.Referral-User .time p{
+.Referral-User .time p {
     margin-left: 5px;
 }
 
+.Referral-User .transaction-hash {
+    width: 776px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 
+}
 
-@media (max-width:700px){
+.Referral-User .transaction-site,
+.Referral-User .transaction-id {
+    margin: 3px 0 0 0;
+
+}
+.Referral-User .transaction-site{
+    text-decoration: underline;
+}
+.Referral-User .ticket{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 8px 6px;
+}
+
+@media (max-width:700px) {
     .Referral-User {
         display: flex;
         justify-content: space-between;
         border-bottom: dashed white 2px;
         margin: 0px 10px 0px 10px;
     }
-    .Referral-User .time{
+
+    .Referral-User .time {
         margin-left: 0px;
         display: flex;
         align-items: center;

@@ -46,6 +46,11 @@
     margin-right: -12px;
 }
 
+.signin_modal .profile-icon:hover{
+    filter: blur(2px);
+
+}
+
 .signin_modal .modal_nickname {
     margin-top: 30px;
     display: flex;
